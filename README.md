@@ -7,7 +7,7 @@ A custom <A href="https://www.debian.org/index.el.html"> Debian Linux </A> ISO, 
 **What's in the bootable iso?? Check below...** (based on Debian Linux 9.0.1 netinstall)
   1. Samba 4 (with Recycle Bin per share)
   2. Webmin (administrate the server easier)
-  3. Fail2ban (trying to protect the data from ransomware malicious software)
+  3. Fail2ban (trying to protect data from ransomware malicious software)
   4. Rsync (bash scripts with rsync so you can create backups easily)
   5. Many more will come...
 </p>
