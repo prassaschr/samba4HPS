@@ -1,6 +1,7 @@
-# Samba4HPS - Samba 4 for Hellenic Public Sector... cause a secure File Server is a must for medium and big public services 
+# Samba4HPS - Samba 4 for Hellenic Public Sector 
+... cause a secure File Server is a must for medium and big public services...
+
 A custom Debian Linux ISO, preconfigured, to help administrators install and run a Samba 4 server in Hellenic Public Sector
- 
 
 The installation is semi automated. During installation you will need to choose only the root password and the partition/s where the system will be installed. 
 
