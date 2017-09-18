@@ -13,4 +13,5 @@ During installation you will need to choose only the root password and the parti
   3. Webmin
   4. Fail2ban
   5. Rsync
+  6. Many more will come...
 </p>
