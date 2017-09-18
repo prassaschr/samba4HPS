@@ -1,4 +1,4 @@
-# Samba4HPS - Samba for Hellenic Public Sector 
+# Samba4HPS - Samba Server for Hellenic Public Sector 
 ... cause a secure and free File Server is a must for medium and big public organizations...
 
 <p align="justify">
