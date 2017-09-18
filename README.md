@@ -8,7 +8,7 @@ A custom <A href="https://www.debian.org/index.el.html"> Debian Linux </A> ISO, 
   1. Debian Linux 9.0.1 netinstall
   2. Samba 4 installation with ...
   3. Webmin
-  4. Fail2ban
+  4. Fail2ban (trying to protect the data from ransomware malicious software)
   5. Rsync
   6. Many more will come...
 </p>
