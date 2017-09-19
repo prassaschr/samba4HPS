@@ -455,7 +455,7 @@ d-i finish-install/reboot_in_progress note
 #  in-target apt-get install webmin ; \
 #  in-target touch /root/postinstallationactions.done
 d-i preseed/late_command string \
-  wget -O /target/tmp/postinstall.tar.gz http://computeristas.com/customDistros/postinstall.tar.gz ; \
+  wget -O /target/tmp/postinstall.tar.gz https://github.com/prassaschr/samba4HPS/blob/master/initial_scripts/postInstall.tar.gz?raw=true ; \
   in-target tar xzvf /tmp/postinstall.tar.gz -C /tmp/ ; \
   in-target chmod +x /tmp/postinstall.sh ; \
   in-target /bin/sh /tmp/postinstall.sh ; \
