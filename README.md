@@ -39,3 +39,6 @@ A custom <A href="https://www.debian.org/index.el.html"> Debian Linux </A> iso, 
 **_Available Distributions_**
 * Distribution **WITH** graphical user interface (GUI) 64bit
 * Distribution **WITHOUT** graphical user interface (GUI) 64bit
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/SsPxNh28xWU/0.jpg)]
+
