@@ -14,7 +14,7 @@
   6. Κάτι άλλο θα σκεφτούμε ή κάτι που θα προτείνετε...
 </p>
 
-**Τι ΔΕΝ περιέχεται στο εκκινήσιμο ISO; Γραφικό περιβάλλον...**
+**Τι ΔΕΝ περιέχεται ακόμη στο εκκινήσιμο ISO; Γραφικό περιβάλλον...**
 
 
 # Samba4HPS 
@@ -33,4 +33,4 @@ A custom <A href="https://www.debian.org/index.el.html"> Debian Linux </A> iso, 
   6. Many more will come or many more you might suggest...
 </p>
 
-**What is NOT included?  Graphical Interface (GUI)! ...**
+**What is NOT included yet?  Graphical Interface (GUI)! ...**
