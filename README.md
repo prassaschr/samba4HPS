@@ -40,5 +40,4 @@ A custom <A href="https://www.debian.org/index.el.html"> Debian Linux </A> iso, 
 * Distribution **WITH** graphical user interface (GUI) 64bit
 * Distribution **WITHOUT** graphical user interface (GUI) 64bit
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/SsPxNh28xWU/0.jpg)]
-
+[![Samba4HPS Installation](https://img.youtube.com/vi/SsPxNh28xWU/0.jpg)](https://www.youtube.com/watch?v=SsPxNh28xWU "Samba4HPS Installation")
