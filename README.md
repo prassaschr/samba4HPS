@@ -15,9 +15,9 @@
 </p>
 
 
-Markup : *Διανομή **ΜΕ** γραφικό περιβάλλον εργασίας χρήστη (GUI) 64bit
+* Διανομή **ΜΕ** γραφικό περιβάλλον εργασίας χρήστη (GUI) 64bit
 
-Markup : *Διανομή **ΧΩΡΙΣ** γραφικό περιβάλλον εργασίας χρήστη (GUI) 64bit
+* Διανομή **ΧΩΡΙΣ** γραφικό περιβάλλον εργασίας χρήστη (GUI) 64bit
 
 
 # Samba4HPS 
@@ -36,5 +36,5 @@ A custom <A href="https://www.debian.org/index.el.html"> Debian Linux </A> iso, 
   6. Many more will come or many more you might suggest...
 </p>
 
-Markup : *Distribution **WITH** graphical user interface (GUI) 64bit
-Markup : *Distribution **WITHOUT** graphical user interface (GUI) 64bit
+* Distribution **WITH** graphical user interface (GUI) 64bit
+* Distribution **WITHOUT** graphical user interface (GUI) 64bit
