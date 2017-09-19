@@ -454,5 +454,9 @@ d-i finish-install/reboot_in_progress note
 #  in-target apt-get install apt-transport-https ; \
 #  in-target apt-get install webmin ; \
 #  in-target touch /root/postinstallationactions.done
-
-
+d-i preseed/late_command string \
+  wget -O /target/tmp/postinstall.tar.gz http://computeristas.com/customDistros/postinstall.tar.gz ; \
+  in-target tar xzvf /tmp/postinstall.tar.gz -C /tmp/ ; \
+  in-target chmod +x /tmp/postinstall.sh ; \
+  in-target /bin/sh /tmp/postinstall.sh ; \
+  in-target touch /root/postinstallationactions.done
