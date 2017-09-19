@@ -32,4 +32,4 @@ A custom <A href="https://www.debian.org/index.el.html"> Debian Linux </A> iso, 
   6. Many more will come or many more you might suggest...
 </p>
 
-**What is not included?  Graphical Interface (GUI)! ...**
+**What is NOT included?  Graphical Interface (GUI)! ...**
