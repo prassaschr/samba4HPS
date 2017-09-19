@@ -329,9 +329,9 @@ d-i partman-auto/method string lvm
 tasksel tasksel/first multiselect standard, SSH server
 d-i pkgsel/install-language-support boolean true
 d-i pkgsel/language-pack-patterns string el_GR
-d-i pkgsel/include string ssh openssh-client openssh-server \
-     rsync curl ntp fail2ban samba smbclient zip unzip samba-vfs-modules \
-     cifs-utils ntfs-3g
+#d-i pkgsel/include string ssh openssh-client openssh-server \
+#     rsync curl ntp fail2ban samba smbclient zip unzip samba-vfs-modules \
+#     cifs-utils ntfs-3g
 d-i pkgsel/upgrade select safe-upgrade
 # Individual additional packages to install
 #d-i pkgsel/include string openssh-server build-essential
@@ -447,12 +447,12 @@ d-i finish-install/reboot_in_progress note
 
 #Post-Installation Commands, Ρυθμίσεις σεναρίων προς εκτέλεση μετά την εγκατάσταση
 #d-i preseed/late_command string in-target wget -P /tmp/ http://$server/skript.sh; in-target chmod +x /tmp/s
-d-i preseed/late_command string \
-  wget -O /target/root/jcameron-key.asc http://www.webmin.com/jcameron-key.asc ; \
-  in-target apt-key add /root/jcameron-key.asc ; \
-  in-target apt-get update ; \
-  in-target apt-get install apt-transport-https ; \
-  in-target apt-get install webmin ; \
-  in-target touch /root/postinstallationactions.done
+#d-i preseed/late_command string \
+#  wget -O /target/root/jcameron-key.asc http://www.webmin.com/jcameron-key.asc ; \
+#  in-target apt-key add /root/jcameron-key.asc ; \
+#  in-target apt-get update ; \
+#  in-target apt-get install apt-transport-https ; \
+#  in-target apt-get install webmin ; \
+#  in-target touch /root/postinstallationactions.done
 
 
