@@ -14,7 +14,8 @@
   6. Κάτι άλλο θα σκεφτούμε ή κάτι που θα προτείνετε...
 </p>
 
-**Τι ΔΕΝ περιέχεται ακόμη στο εκκινήσιμο ISO; Γραφικό περιβάλλον...**
+Διανομή **ΜΕ** γραφικό περιβάλλον εργασίας χρήστη (GUI) 64bit
+Διανομή **ΧΩΡΙΣ** γραφικό περιβάλλον εργασίας χρήστη (GUI) 64bit
 
 
 # Samba4HPS 
@@ -33,4 +34,5 @@ A custom <A href="https://www.debian.org/index.el.html"> Debian Linux </A> iso, 
   6. Many more will come or many more you might suggest...
 </p>
 
-**What is NOT included yet?  Graphical Interface (GUI)! ...**
+Distribution **WITH** graphical user interface (GUI) 64bit
+Distribution **WITHOUT** graphical user interface (GUI) 64bit
