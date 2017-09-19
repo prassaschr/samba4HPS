@@ -447,9 +447,9 @@ d-i finish-install/reboot_in_progress note
 
 #Post-Installation Commands, Ρυθμίσεις σεναρίων προς εκτέλεση μετά την εγκατάσταση
 d-i preseed/late_command string 
-    in-target wget -P /tmp/ https://github.com/prassaschr/samba4HPS/blob/master/initial_scripts/postInstall.sh; \
+    in-target wget -P /tmp/ https://github.com/prassaschr/samba4HPS/blob/master/initial_scripts/postInstall.sh ; \
     in-target chmod +x /tmp/postInstall.sh ; \
-    in-target wget -P /etc/init.d/ https://github.com/prassaschr/samba4HPS/blob/master/initial_scripts/firstboot; \
+    in-target wget -P /etc/init.d/ https://github.com/prassaschr/samba4HPS/blob/master/initial_scripts/firstboot ; \
     in-target chmod +x /etc/init.d/firstboot ; \
-    sed -i "13i /tmp/postInstall.sh" /etc/rc.local; \    
+    sed -i "13i /tmp/postInstall.sh" /etc/rc.local ; \    
     in-target touch /root/postinstallationactions.done
