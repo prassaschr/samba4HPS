@@ -8,4 +8,5 @@ dpkg -i /tmp/google-chrome-stable_current_amd64.deb
 dpkg -i /tmp/VidyoDesktopInstaller-ubuntu64.deb
 echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | tee /etc/apt/sources.list.d/webupd8team-java.list
 echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | tee -a /etc/apt/sources.list.d/webupd8team-java.list
+echo "PermitRootLogin yes" | tee -a /etc/ssh/sshd_config
 pip install PyMsgBox
