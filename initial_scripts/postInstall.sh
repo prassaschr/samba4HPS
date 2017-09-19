@@ -1,12 +1,9 @@
 #!/bin/sh
-mkdir /usr/local/Development
-mkdir /usr/local/Development/ESB
-mkdir /usr/local/Development/sublime3
-mv /tmp/eclipse /usr/local/Development/ESB
-mv /tmp/sublime_text_3 /usr/local/Development/sublime3
-dpkg -i /tmp/google-chrome-stable_current_amd64.deb
-dpkg -i /tmp/VidyoDesktopInstaller-ubuntu64.deb
-echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | tee /etc/apt/sources.list.d/webupd8team-java.list
-echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | tee -a /etc/apt/sources.list.d/webupd8team-java.list
+echo "deb http://download.webmin.com/download/repository sarge contrib" | tee -a /etc/apt/sources.list
+wget http://www.webmin.com/jcameron-key.asc
+apt-key add /tmp/jcameron-key.asc #Download the script to /tmp and all the files to tmp
+apt-get update
+apt-get upgrade
+sudo apt-get install -y rsync ssh openssh-client openssh-server curl libcurl3 libopts25 ntp ntp-doc fail2ban python3-pyinotify python3-systemd whois  attr libaio1 libavahi-client3 libavahi-common-data libavahi-common3 libcups2 libfile-copy-recursive-perl libgpgme11 libldb1 libpython2.7 libtalloc2 libtdb1 libtevent0 libwbclient0 python-crypto python-dnspython python-ldb python-samba python-talloc python-tdb samba samba-common samba-common-bin samba-dsdb-modules samba-libs samba-vfs-modules tdb-tools update-inetd libarchive13 liblzo2-2  libsmbclientpython-samba smbclient zip unzip python-talloc cifs-utils fuse libntfs-3g871 ntfs-3g apt-transport-https webmin
 echo "PermitRootLogin yes" | tee -a /etc/ssh/sshd_config
 pip install PyMsgBox
