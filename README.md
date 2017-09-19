@@ -1,4 +1,5 @@
-# Samba4HPS - Samba File Server για τον Ελληνικό Δημόσιο Τομέα (όχι μόνο...)
+# Samba4HPS 
+Samba File Server για τον Ελληνικό Δημόσιο Τομέα (όχι μόνο...)
 ... γιατί ένας **ασφαλής**, εύκολα εγκαταστήσιμος και διαχειρίσιμος, **δωρεάν** File Server είναι παραπάνω από απαραίτητος για τις μεσαίου και μεγάλου μεγέθους Δημόσιες Υπηρεσίες...
 
 <p align="justify">
@@ -15,7 +16,8 @@
 
 
 
-# Samba4HPS - Samba File Server for Hellenic Public Sector 
+# Samba4HPS 
+Samba File Server for Hellenic Public Sector 
 ... cause a **secure**, easy to administer and **free** File Server is a must for medium and big public organizations...
 
 <p align="justify">
