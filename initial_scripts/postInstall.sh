@@ -9,4 +9,4 @@ apt-get install -y rsync ssh openssh-client openssh-server curl libcurl3 libopts
 echo "PermitRootLogin yes" | tee -a /etc/ssh/sshd_config
 echo "Bump! I'm your first-boot script."
 # Delete me
-rm $0
+#rm $0
