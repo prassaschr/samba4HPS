@@ -474,10 +474,10 @@ d-i finish-install/reboot_in_progress note
 #	wget -O /target/tmp/python_2.7.13-2_amd64.deb http://ftp.de.debian.org/debian/pool/main/p/python-defaults/python_2.7.13-2_amd64.deb ; \
 #	wget -O /target/tmp/webmin_1.850_all.deb http://prdownloads.sourceforge.net/webadmin/webmin_1.850_all.deb ; \
 #	wget -O /target/tmp/dialog_1.3-20160828-2_amd64.deb http://ftp.de.debian.org/debian/pool/main/d/dialog/dialog_1.3-20160828-2_amd64.deb ; \	
-d-i preseed/late_command string	in-target wget -O /tmp/webmin_1.850_all.deb https://github.com/prassaschr/samba4HPS/blob/master/initial_scripts/webmin_1.850_all.deb;
-d-i preseed/late_command string in-target wget -O /tmp/smb.conf  https://github.com/prassaschr/samba4HPS/blob/master/samba/smb.conf;
-d-i preseed/late_command string in-target mv /etc/samba/smb.conf /etc/samba/smb.conf.bck;
-d-i preseed/late_command string in-target mv /tmp/smb.conf /etc/samba/smb.conf;
-d-i preseed/late_command string in-target dpkg -i /tmp/webmin_1.850_all.deb;
-d-i preseed/late_command string in-target echo "PermitRootLogin yes" | tee -a /etc/ssh/sshd_config;
-d-i preseed/late_command string in-target touch /root/postinstallationactions.done
+d-i preseed/late_command string	in-target wget -O /tmp/webmin_1.850_all.deb https://github.com/prassaschr/samba4HPS/blob/master/initial_scripts/webmin_1.850_all.deb; \
+in-target wget -O /tmp/smb.conf  https://github.com/prassaschr/samba4HPS/blob/master/samba/smb.conf; \
+in-target mv /etc/samba/smb.conf /etc/samba/smb.conf.bck; \
+in-target mv /tmp/smb.conf /etc/samba/smb.conf; \
+in-target dpkg -i /tmp/webmin_1.850_all.deb; \
+in-target echo "PermitRootLogin yes" | tee -a /etc/ssh/sshd_config; \
+in-target touch /root/postinstallationactions.done
