@@ -466,7 +466,7 @@ d-i preseed/late_command string
 	wget -O /target/tmp/libavahi-common-data_0.6.32-2_amd64.deb http://ftp.de.debian.org/debian/pool/main/a/avahi/libavahi-common-data_0.6.32-2_amd64.deb ; \
 	wget -O /target/tmp/libavahi-common3_0.6.32-2_amd64.deb http://ftp.de.debian.org/debian/pool/main/a/avahi/libavahi-common3_0.6.32-2_amd64.deb ; \
 	wget -O /target/tmp/libcups2_2.2.1-8_amd64.deb http://ftp.de.debian.org/debian/pool/main/c/cups/libcups2_2.2.1-8_amd64.deb ; \
-	wget -O /target/tmp/ssh_7.4p1-10+deb9u1_all.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb ; \
+	wget -O /target/tmp/libfile-copy-recursive-perl_0.38-1_all.deb http://ftp.de.debian.org/debian/pool/main/libf/libfile-copy-recursive-perl/libfile-copy-recursive-perl_0.38-1_all.deb ; \
 	wget -O /target/tmp/ssh_7.4p1-10+deb9u1_all.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb ; \
 	wget -O /target/tmp/ssh_7.4p1-10+deb9u1_all.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb ; \
 	wget -O /target/tmp/ssh_7.4p1-10+deb9u1_all.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb ; \
@@ -486,6 +486,6 @@ d-i preseed/late_command string
 	wget -O /target/tmp/ssh_7.4p1-10+deb9u1_all.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb ; \
 	wget -O /target/tmp/ssh_7.4p1-10+deb9u1_all.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb ; \
 	in-target wget -P /tmp/ https://github.com/prassaschr/samba4HPS/blob/master/initial_scripts/postInstall.sh ; \
-    in-target chmod +x /tmp/postInstall.sh ; \
+    in-target chmod +x /tmp/postinstall.sh ; \
 	in-target /bin/sh /tmp/postinstall.sh ; \
     in-target touch /root/postinstallationactions.done
