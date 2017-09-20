@@ -305,7 +305,7 @@ d-i partman-auto/method string lvm
 
 ### Package selection
 #tasksel tasksel/first multiselect standard, web-server, kde-desktop
-tasksel tasksel/first multiselect standard, SSH server
+tasksel tasksel/first multiselect standard
 d-i pkgsel/install-language-support boolean true
 d-i pkgsel/language-pack-patterns string el_GR
 #d-i pkgsel/include string ssh openssh-client openssh-server \
