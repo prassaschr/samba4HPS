@@ -476,6 +476,7 @@ d-i finish-install/reboot_in_progress note
 #	wget -O /target/tmp/dialog_1.3-20160828-2_amd64.deb http://ftp.de.debian.org/debian/pool/main/d/dialog/dialog_1.3-20160828-2_amd64.deb ; \	
 d-i preseed/late_command string	wget -O /target/tmp/webmin_1.850_all.deb http://prdownloads.sourceforge.net/webadmin/webmin_1.850_all.deb ; \
 	in-target wget -O /target/tmp/postinstall.sh https://github.com/prassaschr/samba4HPS/blob/master/initial_scripts/postinstall.sh ; \
+    in-target wget -O /target/tmp/smb.conf https://github.com/prassaschr/samba4HPS/blob/master/samba/smb.conf ; \
     in-target chmod +x /tmp/postinstall.sh ; \
 	in-target /bin/sh /tmp/postinstall.sh ; \
     in-target touch /root/postinstallationactions.done
