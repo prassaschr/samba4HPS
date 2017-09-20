@@ -1,5 +1,7 @@
 #Αδεια χρήσης GPL3
 #Ρυθμίσεις Γραμμής Εντολών
+#https://www.debian.org/releases/stretch/example-preseed.txt
+# Thank you!: https://github.com/itminedu/edu_distributions/blob/master/debian8.6.0/developer.seed
 #### Contents of the preconfiguration file (for stretch)
 ### Localization
 # Preseeding only locale sets language, country and locale.
