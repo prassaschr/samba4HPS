@@ -15,7 +15,7 @@
   6. Κάτι άλλο θα σκεφτούμε ή κάτι που θα προτείνετε...
 </p>
 
-**_Διαθέσιμες Διανομές_**
+**_Διανομές - Σύντομα διαθέσιμες..._**
 * Διανομή **ΜΕ** γραφικό περιβάλλον εργασίας χρήστη (GUI) 64bit
 * Διανομή **ΧΩΡΙΣ** γραφικό περιβάλλον εργασίας χρήστη (GUI) 64bit
 
@@ -36,7 +36,7 @@ A custom <A href="https://www.debian.org/index.el.html"> Debian Linux </A> iso, 
   6. Many more will come or many more you might suggest...
 </p>
 
-**_Available Distributions_**
+**_Distributions - Available soon..._**
 * Distribution **WITH** graphical user interface (GUI) 64bit
 * Distribution **WITHOUT** graphical user interface (GUI) 64bit
 
