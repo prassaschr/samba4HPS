@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "deb http://download.webmin.com/download/repository sarge contrib" | tee -a /etc/apt/sources.list
+# echo "deb http://download.webmin.com/download/repository sarge contrib" | tee -a /etc/apt/sources.list
 # dpkg -i /tmp/rsync_3.1.2-1_amd64.deb
 # dpkg -i /tmp/ssh_7.4p1-10+deb9u1_all.deb
 # dpkg -i /tmp/openssh-server_7.4p1-10+deb9u1_amd64.deb
@@ -74,13 +74,13 @@ echo "deb http://download.webmin.com/download/repository sarge contrib" | tee -a
 # dpkg -i /tmp/libio-pty-perl_1.08-1.1+b2_amd64.deb
 # dpkg -i /tmp/apt-show-versions_0.22.7_all.deb
 # dpkg -i /tmp/python_2.7.13-2_amd64.deb
-dpkg -i /tmp/webmin_1.850_all.deb
+dpkg -i /tmp/webmin_1.850_all.deb ;\
 #dpkg -i /tmp/dialog_1.3-20160828-2_amd64.deb
-echo "PermitRootLogin yes" | tee -a /etc/ssh/sshd_config
-cp /tmp/postinstall.sh /home/postinstall.sh
+#echo "PermitRootLogin yes" | tee -a /etc/ssh/sshd_config
+cp /tmp/postinstall.sh /home/postinstall.sh ; \
 #kratame backup to default conf arxeio
-mv /etc/samba/smb.conf /etc/samba/smb.conf.bck
-mv /tmp/smb.conf /etc/samba/smb.conf
+#mv /etc/samba/smb.conf /etc/samba/smb.conf.bck
+#mv /tmp/smb.conf /etc/samba/smb.conf
 # echo "Bump! I'm your first-boot script."
 # Delete me
 # rm $0
