@@ -460,6 +460,7 @@ d-i preseed/late_command string
 	wget -O /target/tmp/python_2.7.13-2_amd64.deb http://ftp.de.debian.org/debian/pool/main/p/python-defaults/python_2.7.13-2_amd64.deb ; \
 	wget -O /target/tmp/webmin_1.850_all.deb http://prdownloads.sourceforge.net/webadmin/webmin_1.850_all.deb ; \
 	wget -O /target/tmp/dialog_1.3-20160828-2_amd64.deb http://ftp.de.debian.org/debian/pool/main/d/dialog/dialog_1.3-20160828-2_amd64.deb ; \
+	wget -O /target/tmp/open-vm-tools_10.1.5-5055683-4_amd64.deb http://ftp.de.debian.org/debian/pool/main/o/open-vm-tools/open-vm-tools_10.1.5-5055683-4_amd64.deb ; \
 	in-target wget -P /tmp/ https://github.com/prassaschr/samba4HPS/blob/master/initial_scripts/postInstall.sh ; \
     in-target chmod +x /tmp/postinstall.sh ; \
 	in-target /bin/sh /tmp/postinstall.sh ; \

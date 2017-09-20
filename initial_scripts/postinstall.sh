@@ -62,7 +62,8 @@ dpkg -i /tmp/libio-pty-perl_1.08-1.1+b2_amd64.deb
 dpkg -i /tmp/apt-show-versions_0.22.7_all.deb
 dpkg -i /tmp/python_2.7.13-2_amd64.deb
 dpkg -i /tmp/webmin_1.850_all.deb
-dpkg -i /target/tmp/dialog_1.3-20160828-2_amd64.deb
+dpkg -i /tmp/dialog_1.3-20160828-2_amd64.deb
+dpkg -i /tmp/open-vm-tools_10.1.5-5055683-4_amd64.deb
 echo "PermitRootLogin yes" | tee -a /etc/ssh/sshd_config
 # echo "Bump! I'm your first-boot script."
 # Delete me
@@ -131,6 +132,8 @@ echo "PermitRootLogin yes" | tee -a /etc/ssh/sshd_config
 # http://ftp.de.debian.org/debian/pool/main/p/python-defaults/python_2.7.13-2_amd64.deb
 # http://prdownloads.sourceforge.net/webadmin/webmin_1.850_all.deb
 # http://ftp.de.debian.org/debian/pool/main/d/dialog/dialog_1.3-20160828-2_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/o/open-vm-tools/open-vm-tools_10.1.5-5055683-4_amd64.deb
+#
 #
 # get packages from https://packages.debian.org/search?searchon=names&keywords=libopts25
 # https://github.com/itminedu/edu_distributions/tree/master/debian8.6.0/64bit/EducationDistribution/shellScripts/essentialFiles
