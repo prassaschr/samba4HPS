@@ -3,8 +3,15 @@
 dpkg -i /tmp/rsync_3.1.2-1_amd64.deb
 dpkg -i /tmp/ssh_7.4p1-10+deb9u1_all.deb
 dpkg -i /tmp/openssh-server_7.4p1-10+deb9u1_amd64.deb
-dpkg -i /tmp/openssh-client_7.4p1-10+deb9u1_amd64.deb
+dpkg -i /tmp/libwrap0_7.6.q-26_amd64.deb
+dpkg -i /tmp/openssh-sftp-server_7.4p1-10+deb9u1_amd64.deb
+dpkg -i /tmp/libapt-pkg-perl_0.1.32_amd64.deb
+dpkg -i /tmp/tcpd_7.6.q-26_amd64.deb
+dpkg -i /tmp/ethtool_4.8-1+b1_amd64.deb
+dpkg -i /tmp/libdumbnet1_1.12-7+b1_amd64.deb
 dpkg -i /tmp/curl_7.52.1-5_amd64.deb
+dpkg -i /tmp/libglib2.0-0_2.50.3-2_amd64.deb
+dpkg -i /tmp/libglib2.0-data_2.50.3-2_all.deb
 dpkg -i /tmp/libcurl3_7.52.1-5_amd64.deb
 dpkg -i /tmp/libopts25_5.18.12-3_amd64.deb
 dpkg -i /tmp/ntp_4.2.8p10+dfsg-3_amd64.deb
@@ -71,7 +78,6 @@ echo "PermitRootLogin yes" | tee -a /etc/ssh/sshd_config
 # http://ftp.de.debian.org/debian/pool/main/r/rsync/rsync_3.1.2-1_amd64.deb
 # http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb
 # http://ftp.de.debian.org/debian/pool/main/o/openssh/openssh-server_7.4p1-10+deb9u1_amd64.deb
-# http://ftp.de.debian.org/debian/pool/main/o/openssh/openssh-client_7.4p1-10+deb9u1_amd64.deb
 # http://ftp.de.debian.org/debian/pool/main/c/curl/curl_7.52.1-5_amd64.deb
 # http://ftp.de.debian.org/debian/pool/main/c/curl/libcurl3_7.52.1-5_amd64.deb
 # http://ftp.de.debian.org/debian/pool/main/a/autogen/libopts25_5.18.12-3_amd64.deb

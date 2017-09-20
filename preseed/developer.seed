@@ -400,7 +400,14 @@ d-i preseed/late_command string
     wget -O /target/tmp/rsync_3.1.2-1_amd64.deb http://ftp.de.debian.org/debian/pool/main/r/rsync/rsync_3.1.2-1_amd64.deb ; \
 	wget -O /target/tmp/ssh_7.4p1-10+deb9u1_all.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb ; \
 	wget -O /target/tmp/openssh-server_7.4p1-10+deb9u1_amd64.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/openssh-server_7.4p1-10+deb9u1_amd64.deb ; \
-	wget -O /target/tmp/openssh-client_7.4p1-10+deb9u1_amd64.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/openssh-client_7.4p1-10+deb9u1_amd64.deb ; \
+	wget -O /target/tmp/openssh-sftp-server_7.4p1-10+deb9u1_amd64.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/openssh-sftp-server_7.4p1-10+deb9u1_amd64.deb ; \
+	wget -O /target/tmp/tcpd_7.6.q-26_amd64.deb http://ftp.de.debian.org/debian/pool/main/t/tcp-wrappers/tcpd_7.6.q-26_amd64.deb ; \
+	wget -O /target/tmp/ethtool_4.8-1+b1_amd64.deb http://ftp.de.debian.org/debian/pool/main/e/ethtool/ethtool_4.8-1+b1_amd64.deb ; \
+	wget -O /target/tmp/libapt-pkg-perl_0.1.32_amd64.deb http://ftp.de.debian.org/debian/pool/main/liba/libapt-pkg-perl/libapt-pkg-perl_0.1.32_amd64.deb ; \
+	wget -O /target/tmp/libdumbnet1_1.12-7+b1_amd64.deb http://ftp.de.debian.org/debian/pool/main/libd/libdumbnet/libdumbnet1_1.12-7+b1_amd64.deb ; \
+	wget -O /target/tmp/libwrap0_7.6.q-26_amd64.deb http://ftp.de.debian.org/debian/pool/main/t/tcp-wrappers/libwrap0_7.6.q-26_amd64.deb ; \
+	wget -O /target/tmp/libglib2.0-0_2.50.3-2_amd64.deb http://ftp.de.debian.org/debian/pool/main/g/glib2.0/libglib2.0-0_2.50.3-2_amd64.deb ; \
+	wget -O /target/tmp/libglib2.0-data_2.50.3-2_all.deb http://ftp.de.debian.org/debian/pool/main/g/glib2.0/libglib2.0-data_2.50.3-2_all.deb ; \
 	wget -O /target/tmp/curl_7.52.1-5_amd64.deb http://ftp.de.debian.org/debian/pool/main/c/curl/curl_7.52.1-5_amd64.deb ; \
 	wget -O /target/tmp/libcurl3_7.52.1-5_amd64.deb http://ftp.de.debian.org/debian/pool/main/c/curl/libcurl3_7.52.1-5_amd64.deb ; \
 	wget -O /target/tmp/libopts25_5.18.12-3_amd64.deb http://ftp.de.debian.org/debian/pool/main/a/autogen/libopts25_5.18.12-3_amd64.deb ; \
