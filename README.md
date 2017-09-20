@@ -8,7 +8,7 @@
  
  ### **_Μην ξεχνάτε! Πάντα να κάνετε Backup τα δεδομένα σας! Κάθε μέρα!_**
 
-**Τι περιέχεται στο εκκινήσιμο ISO; Δείτε παρακάτω...** (βασισμένο στην έκδοση <A href="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/"> Debian Linux 9.0.1 CD 64bit </A>)
+**Τι περιέχεται στο εκκινήσιμο ISO; Δείτε παρακάτω...** (βασισμένο στην έκδοση <A href="https://www.debian.org/distrib/netinst"> Debian Linux 9.0.1 Netinstall 64bit </A>)
   1. <A href="https://www.samba.org/"> Samba 4 </A> (με Κάδο Ανακύκλωσης ανά περιοχή διαμοιρασμού και καταγραφή των λειτουργιών)
   2. <A href="http://www.webmin.com/"> Webmin </A> (διαχειριστικό του server, αρκετά απλό ακόμη και για άπειρους χρήστες Linux)
   3. <A href="https://www.fail2ban.org/wiki/index.php/Main_Page"> Fail2ban </A> (προσπαθώντας να προστατεύσουμε τα δεδομένα από ransomware)
@@ -29,7 +29,7 @@
 <p align="justify">
 A custom <A href="https://www.debian.org/index.el.html"> Debian Linux </A> iso, preconfigured, to help administrators install and run a <A href="https://www.samba.org/"> Samba 4 </A> server in Hellenic Public Sector in just a few minutes. The installation is semi automated and making use of the preseeding method. All the files and the ISO are published under GNU General Public License v3.0, so you can check everything. During installation you will need to choose only the root password and the partition/s where the system will be installed.
 
-**What's in the bootable iso? Check below...** (based on <A href="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/"> Debian Linux 9.0.1 CD 64bit </A>)
+**What's in the bootable iso? Check below...** (based on <A href="https://www.debian.org/distrib/netinsto"> Debian Linux 9.0.1 Netinstall 64bit </A>)
   1. <A href="https://www.samba.org/"> Samba 4 </A> (with Recycle Bin per share and Full Audit - log a lot)
   2. <A href="http://www.webmin.com/"> Webmin </A> (administrate the server easier, best for linux beginners)
   3. <A href="https://www.fail2ban.org/wiki/index.php/Main_Page"> Fail2ban </A> (trying to protect data from ransomware malicious software)
