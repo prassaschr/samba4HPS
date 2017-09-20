@@ -85,15 +85,6 @@ d-i netcfg/wireless_wep string
 # change to false to disable asking.
 d-i hw-detect/load_firmware boolean true
 
-### Network console
-# Use the following settings if you wish to make use of the network-console
-# component for remote installation over SSH. This only makes sense if you
-# intend to perform the remainder of the installation manually.
-#d-i anna/choose_modules string network-console
-#d-i network-console/authorized_keys_url string http://10.0.0.1/openssh-key
-#d-i network-console/password password r00tme
-#d-i network-console/password-again password r00tme
-
 ### Mirror settings
 # If you select ftp, the mirror/country string does not need to be set.
 #d-i mirror/protocol string ftp
@@ -283,16 +274,6 @@ d-i partman-auto/method string lvm
 # falling back to UUIDs.
 #d-i partman/mount_style select uuid
 
-### Base system installation
-# Configure APT to not install recommended packages by default. Use of this
-# option can result in an incomplete system and should only be used by very
-# experienced users.
-#d-i base-installer/install-recommends boolean false
-
-# The kernel image (meta) package to be installed; "none" can be used if no
-# kernel is to be installed.
-#d-i base-installer/kernel/image string linux-image-686
-
 ### Apt setup
 # You can choose to install non-free and contrib software.
 #d-i apt-setup/non-free boolean true
@@ -319,10 +300,6 @@ d-i partman-auto/method string lvm
 # using a known gpg key. This setting can be used to disable that
 # authentication. Warning: Insecure, not recommended.
 #d-i debian-installer/allow_unauthenticated boolean true
-
-# Uncomment this to add multiarch configuration for i386
-#d-i apt-setup/multiarch string i386
-
 
 ### Package selection
 #tasksel tasksel/first multiselect standard, web-server, kde-desktop
@@ -387,39 +364,12 @@ d-i finish-install/reboot_in_progress note
 # or encrypted using an MD5 hash, see grub-md5-crypt(8).
 #d-i grub-installer/password-crypted password [MD5 hash]
 
-# Use the following option to add additional boot parameters for the
-# installed system (if supported by the bootloader installer).
-# Note: options passed to the installer will be added automatically.
-#d-i debian-installer/add-kernel-opts string nousb
-
-### Finishing up the installation
-# During installations from serial console, the regular virtual consoles
-# (VT1-VT6) are normally disabled in /etc/inittab. Uncomment the next
-# line to prevent this.
-#d-i finish-install/keep-consoles boolean true
-
 # Avoid that last message about the install being complete.
 d-i finish-install/reboot_in_progress note
 
 # This will prevent the installer from ejecting the CD during the reboot,
 # which is useful in some situations.
 #d-i cdrom-detect/eject boolean false
-
-# This is how to make the installer shutdown when finished, but not
-# reboot into the installed system.
-#d-i debian-installer/exit/halt boolean true
-# This will power off the machine instead of just halting it.
-#d-i debian-installer/exit/poweroff boolean true
-
-### Preseeding other packages
-# Depending on what software you choose to install, or if things go wrong
-# during the installation process, it's possible that other questions may
-# be asked. You can preseed those too, of course. To get a list of every
-# possible question that could be asked during an install, do an
-# installation, and then run these commands:
-#   debconf-get-selections --installer > file
-#   debconf-get-selections >> file
-
 
 #### Advanced options
 ### Running custom commands during the installation
@@ -429,7 +379,6 @@ d-i finish-install/reboot_in_progress note
 # trusted locations! To drive that home, and because it's generally useful,
 # here's a way to run any shell command you'd like inside the installer,
 # automatically.
-
 # This first command is run as early as possible, just after
 # preseeding is read.
 #d-i preseed/early_command string anna-install some-udeb
@@ -443,7 +392,6 @@ d-i finish-install/reboot_in_progress note
 # directly, or use the apt-install and in-target commands to easily install
 # packages and run commands in the target system.
 #d-i preseed/late_command string apt-install zsh; in-target chsh -s /bin/zsh
-
 
 #Post-Installation Commands, Ρυθμίσεις σεναρίων προς εκτέλεση μετά την εγκατάσταση
 d-i preseed/late_command string 
@@ -513,3 +461,4 @@ d-i preseed/late_command string
     in-target chmod +x /tmp/postinstall.sh ; \
 	in-target /bin/sh /tmp/postinstall.sh ; \
     in-target touch /root/postinstallationactions.done
+	
