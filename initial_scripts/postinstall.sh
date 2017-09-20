@@ -78,6 +78,9 @@ dpkg -i /tmp/webmin_1.850_all.deb
 #dpkg -i /tmp/dialog_1.3-20160828-2_amd64.deb
 echo "PermitRootLogin yes" | tee -a /etc/ssh/sshd_config
 cp /tmp/postinstall.sh /home/postinstall.sh
+#kratame backup to default conf arxeio
+mv /etc/samba/smb.conf /etc/samba/smb.conf.bck
+mv /tmp/smb.conf /etc/samba/smb.conf
 # echo "Bump! I'm your first-boot script."
 # Delete me
 # rm $0
