@@ -132,3 +132,4 @@ echo "PermitRootLogin yes" | tee -a /etc/ssh/sshd_config
 # http://ftp.de.debian.org/debian/pool/main/d/dialog/dialog_1.3-20160828-2_amd64.deb
 #
 # get packages from https://packages.debian.org/search?searchon=names&keywords=libopts25
+# https://github.com/itminedu/edu_distributions/tree/master/debian8.6.0/64bit/EducationDistribution/shellScripts/essentialFiles
