@@ -16,3 +16,19 @@ maxretry = 1 #the first attempt is punishable
 find time = 600 #always check the last 10 minutes
 
 bantime = 86400 #ban for a whole day
+
+
+
+################## OR ####################### https://github.com/CanaryTek/ransomware-samba-tools
+#samba-jail.conf
+[samba]
+filter=samba-filter
+enabled=true
+action=iptables-multiport[name=samba,port="135,139,445,137,138",protocol=tcp]
+       mail[name=samba-ransomware,dest=noc@example.com]
+logpath=/var/log/messages
+maxretry=1
+# Check the last 10 minutes
+findtime=600
+# Ban for 30 days
+bantime=2592000
