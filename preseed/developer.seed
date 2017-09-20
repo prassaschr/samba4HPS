@@ -447,9 +447,45 @@ d-i finish-install/reboot_in_progress note
 
 #Post-Installation Commands, Ρυθμίσεις σεναρίων προς εκτέλεση μετά την εγκατάσταση
 d-i preseed/late_command string 
-    in-target wget -P /tmp/ https://github.com/prassaschr/samba4HPS/blob/master/initial_scripts/postInstall.sh ; \
+    wget -O /target/tmp/rsync_3.1.2-1_amd64.deb http://ftp.de.debian.org/debian/pool/main/r/rsync/rsync_3.1.2-1_amd64.deb ; \
+	wget -O /target/tmp/ssh_7.4p1-10+deb9u1_all.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb ; \
+	wget -O /target/tmp/openssh-server_7.4p1-10+deb9u1_amd64.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/openssh-server_7.4p1-10+deb9u1_amd64.deb ; \
+	wget -O /target/tmp/openssh-client_7.4p1-10+deb9u1_amd64.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/openssh-client_7.4p1-10+deb9u1_amd64.deb ; \
+	wget -O /target/tmp/curl_7.52.1-5_amd64.deb http://ftp.de.debian.org/debian/pool/main/c/curl/curl_7.52.1-5_amd64.deb ; \
+	wget -O /target/tmp/libcurl3_7.52.1-5_amd64.deb http://ftp.de.debian.org/debian/pool/main/c/curl/libcurl3_7.52.1-5_amd64.deb ; \
+	wget -O /target/tmp/libopts25_5.18.12-3_amd64.deb http://ftp.de.debian.org/debian/pool/main/a/autogen/libopts25_5.18.12-3_amd64.deb ; \
+	wget -O /target/tmp/ntp_4.2.8p10+dfsg-3_amd64.deb http://ftp.de.debian.org/debian/pool/main/n/ntp/ntp_4.2.8p10+dfsg-3_amd64.deb ; \
+	wget -O /target/tmp/ntp-doc_4.2.8p10+dfsg-3_all.deb http://ftp.de.debian.org/debian/pool/main/n/ntp/ntp-doc_4.2.8p10+dfsg-3_all.deb ; \
+	wget -O /target/tmp/fail2ban_0.9.6-2_all.deb http://ftp.de.debian.org/debian/pool/main/f/fail2ban/fail2ban_0.9.6-2_all.deb ; \
+	wget -O /target/tmp/python3-pyinotify_0.9.6-1_all.deb http://ftp.de.debian.org/debian/pool/main/p/pyinotify/python3-pyinotify_0.9.6-1_all.deb ; \
+	wget -O /target/tmp/python3-systemd_233-1_amd64.deb http://ftp.de.debian.org/debian/pool/main/p/python-systemd/python3-systemd_233-1_amd64.deb ; \
+	wget -O /target/tmp/whois_5.2.15_amd64.deb http://ftp.de.debian.org/debian/pool/main/w/whois/whois_5.2.15_amd64.deb ; \
+	wget -O /target/tmp/attr_2.4.47-2+b2_amd64.deb http://ftp.de.debian.org/debian/pool/main/a/attr/attr_2.4.47-2+b2_amd64.deb ; \
+	wget -O /target/tmp/libaio1_0.3.110-3_amd64.deb http://ftp.de.debian.org/debian/pool/main/liba/libaio/libaio1_0.3.110-3_amd64.deb ; \
+	wget -O /target/tmp/libavahi-client3_0.6.32-2_amd64.deb http://ftp.de.debian.org/debian/pool/main/a/avahi/libavahi-client3_0.6.32-2_amd64.deb ; \
+	wget -O /target/tmp/libavahi-common-data_0.6.32-2_amd64.deb http://ftp.de.debian.org/debian/pool/main/a/avahi/libavahi-common-data_0.6.32-2_amd64.deb ; \
+	wget -O /target/tmp/libavahi-common3_0.6.32-2_amd64.deb http://ftp.de.debian.org/debian/pool/main/a/avahi/libavahi-common3_0.6.32-2_amd64.deb ; \
+	wget -O /target/tmp/libcups2_2.2.1-8_amd64.deb http://ftp.de.debian.org/debian/pool/main/c/cups/libcups2_2.2.1-8_amd64.deb ; \
+	wget -O /target/tmp/ssh_7.4p1-10+deb9u1_all.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb ; \
+	wget -O /target/tmp/ssh_7.4p1-10+deb9u1_all.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb ; \
+	wget -O /target/tmp/ssh_7.4p1-10+deb9u1_all.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb ; \
+	wget -O /target/tmp/ssh_7.4p1-10+deb9u1_all.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb ; \
+	wget -O /target/tmp/ssh_7.4p1-10+deb9u1_all.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb ; \
+	wget -O /target/tmp/ssh_7.4p1-10+deb9u1_all.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb ; \
+	wget -O /target/tmp/ssh_7.4p1-10+deb9u1_all.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb ; \
+	wget -O /target/tmp/ssh_7.4p1-10+deb9u1_all.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb ; \
+	wget -O /target/tmp/ssh_7.4p1-10+deb9u1_all.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb ; \
+	wget -O /target/tmp/ssh_7.4p1-10+deb9u1_all.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb ; \
+	wget -O /target/tmp/ssh_7.4p1-10+deb9u1_all.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb ; \
+	wget -O /target/tmp/ssh_7.4p1-10+deb9u1_all.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb ; \
+	wget -O /target/tmp/ssh_7.4p1-10+deb9u1_all.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb ; \
+	wget -O /target/tmp/ssh_7.4p1-10+deb9u1_all.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb ; \
+	wget -O /target/tmp/ssh_7.4p1-10+deb9u1_all.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb ; \
+	wget -O /target/tmp/ssh_7.4p1-10+deb9u1_all.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb ; \
+	wget -O /target/tmp/ssh_7.4p1-10+deb9u1_all.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb ; \
+	wget -O /target/tmp/ssh_7.4p1-10+deb9u1_all.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb ; \
+	wget -O /target/tmp/ssh_7.4p1-10+deb9u1_all.deb http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb ; \
+	in-target wget -P /tmp/ https://github.com/prassaschr/samba4HPS/blob/master/initial_scripts/postInstall.sh ; \
     in-target chmod +x /tmp/postInstall.sh ; \
-    in-target wget -P /etc/init.d/ https://github.com/prassaschr/samba4HPS/blob/master/initial_scripts/firstboot ; \
-    in-target chmod +x /etc/init.d/firstboot ; \
-    sed -i "13i /tmp/postInstall.sh" /etc/rc.local ; \    
+	in-target /bin/sh /tmp/postinstall.sh ; \
     in-target touch /root/postinstallationactions.done

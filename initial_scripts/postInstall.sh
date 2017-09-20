@@ -1,12 +1,73 @@
-#!/bin/bash
+#!/bin/sh
 echo "deb http://download.webmin.com/download/repository sarge contrib" | tee -a /etc/apt/sources.list
-cd /root
-wget http://www.webmin.com/jcameron-key.asc
-apt-key add /root/jcameron-key.asc #Download the script to /tmp and all the files to tmp
-apt-get update
-apt-get upgrade
-apt-get install -y rsync ssh openssh-client openssh-server curl libcurl3 libopts25 ntp ntp-doc fail2ban python3-pyinotify python3-systemd whois  attr libaio1 libavahi-client3 libavahi-common-data libavahi-common3 libcups2 libfile-copy-recursive-perl libgpgme11 libldb1 libpython2.7 libtalloc2 libtdb1 libtevent0 libwbclient0 python-crypto python-dnspython python-ldb python-samba python-talloc python-tdb samba samba-common samba-common-bin samba-dsdb-modules samba-libs samba-vfs-modules tdb-tools update-inetd libarchive13 liblzo2-2  libsmbclientpython-samba smbclient zip unzip python-talloc cifs-utils fuse libntfs-3g871 ntfs-3g apt-transport-https webmin
 echo "PermitRootLogin yes" | tee -a /etc/ssh/sshd_config
-echo "Bump! I'm your first-boot script."
+dpkg -i /tmp/webmin_1.850_all.deb
+# echo "Bump! I'm your first-boot script."
 # Delete me
-rm $0
+# rm $0
+
+# http://ftp.de.debian.org/debian/pool/main/r/rsync/rsync_3.1.2-1_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/o/openssh/ssh_7.4p1-10+deb9u1_all.deb
+# http://ftp.de.debian.org/debian/pool/main/o/openssh/openssh-server_7.4p1-10+deb9u1_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/o/openssh/openssh-client_7.4p1-10+deb9u1_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/c/curl/curl_7.52.1-5_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/c/curl/libcurl3_7.52.1-5_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/a/autogen/libopts25_5.18.12-3_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/n/ntp/ntp_4.2.8p10+dfsg-3_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/n/ntp/ntp-doc_4.2.8p10+dfsg-3_all.deb
+# http://ftp.de.debian.org/debian/pool/main/f/fail2ban/fail2ban_0.9.6-2_all.deb
+# http://ftp.de.debian.org/debian/pool/main/p/pyinotify/python3-pyinotify_0.9.6-1_all.deb
+# http://ftp.de.debian.org/debian/pool/main/p/python-systemd/python3-systemd_233-1_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/w/whois/whois_5.2.15_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/a/attr/attr_2.4.47-2+b2_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/liba/libaio/libaio1_0.3.110-3_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/a/avahi/libavahi-client3_0.6.32-2_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/a/avahi/libavahi-common-data_0.6.32-2_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/a/avahi/libavahi-common3_0.6.32-2_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/c/cups/libcups2_2.2.1-8_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/libf/libfile-copy-recursive-perl/libfile-copy-recursive-perl_0.38-1_all.deb
+# http://ftp.de.debian.org/debian/pool/main/g/gpgme1.0/libgpgme11_1.8.0-3+b2_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/l/ldb/libldb1_1.1.27-1+b1_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/p/python2.7/libpython2.7_2.7.13-2_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/t/talloc/libtalloc2_2.1.8-1_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/t/tdb/libtdb1_1.3.11-2_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/t/tevent/libtevent0_0.9.31-1_amd64.deb
+# http://security.debian.org/debian-security/pool/updates/main/s/samba/libwbclient0_4.5.8+dfsg-2+deb9u1+b1_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/p/python-crypto/python-crypto_2.6.1-7_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/d/dnspython/python-dnspython_1.15.0-1_all.deb
+# http://ftp.de.debian.org/debian/pool/main/l/ldb/python-ldb_1.1.27-1+b1_amd64.deb
+# http://security.debian.org/debian-security/pool/updates/main/s/samba/python-samba_4.5.8+dfsg-2+deb9u1+b1_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/t/talloc/python-talloc_2.1.8-1_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/t/tdb/python-tdb_1.3.11-2_amd64.deb
+# http://security.debian.org/debian-security/pool/updates/main/s/samba/samba_4.5.8+dfsg-2+deb9u1+b1_amd64.deb
+# http://security.debian.org/debian-security/pool/updates/main/s/samba/samba-common_4.5.8+dfsg-2+deb9u1_all.deb
+# http://security.debian.org/debian-security/pool/updates/main/s/samba/samba-common-bin_4.5.8+dfsg-2+deb9u1+b1_amd64.deb
+# http://security.debian.org/debian-security/pool/updates/main/s/samba/samba-dsdb-modules_4.5.8+dfsg-2+deb9u1+b1_amd64.deb
+# http://security.debian.org/debian-security/pool/updates/main/s/samba/samba-libs_4.5.8+dfsg-2+deb9u1+b1_amd64.deb
+# http://security.debian.org/debian-security/pool/updates/main/s/samba/samba-vfs-modules_4.5.8+dfsg-2+deb9u1+b1_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/t/tdb/tdb-tools_1.3.11-2_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/u/update-inetd/update-inetd_4.44_all.deb
+# http://ftp.de.debian.org/debian/pool/main/liba/libarchive/libarchive13_3.2.2-2_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/l/lzo2/liblzo2-2_2.08-1.2+b2_amd64.deb
+# http://security.debian.org/debian-security/pool/updates/main/s/samba/libsmbclient_4.5.8+dfsg-2+deb9u1+b1_amd64.deb
+# http://security.debian.org/debian-security/pool/updates/main/s/samba/python-samba_4.5.8+dfsg-2+deb9u1+b1_amd64.deb
+# http://security.debian.org/debian-security/pool/updates/main/s/samba/smbclient_4.5.8+dfsg-2+deb9u1+b1_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/z/zip/zip_3.0-11+b1_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/u/unzip/unzip_6.0-21_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/c/cifs-utils/cifs-utils_6.7-1_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/f/fuse/fuse_2.9.7-1_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/n/ntfs-3g/libntfs-3g871_2016.2.22AR.1+dfsg-1_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/n/ntfs-3g/ntfs-3g_2016.2.22AR.1+dfsg-1_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/a/apt/apt-transport-https_1.4.7_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/p/perl/perl_5.24.1-3+deb9u1_amd64.deb 
+# http://ftp.de.debian.org/debian/pool/main/libn/libnet-ssleay-perl/libnet-ssleay-perl_1.80-1_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f-3_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/liba/libauthen-pam-perl/libauthen-pam-perl_0.16-3+b3_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/p/pam/libpam-runtime_1.1.8-3.6_all.deb
+# http://ftp.de.debian.org/debian/pool/main/libi/libio-pty-perl/libio-pty-perl_1.08-1.1+b2_amd64.deb
+# http://ftp.de.debian.org/debian/pool/main/a/apt-show-versions/apt-show-versions_0.22.7_all.deb
+# http://ftp.de.debian.org/debian/pool/main/p/python-defaults/python_2.7.13-2_amd64.deb
+# http://prdownloads.sourceforge.net/webadmin/webmin_1.850_all.deb
+#
+#
+# get packages from https://packages.debian.org/search?searchon=names&keywords=libopts25
