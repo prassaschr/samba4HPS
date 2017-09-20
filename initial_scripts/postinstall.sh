@@ -44,7 +44,6 @@ dpkg -i /tmp/update-inetd_4.44_all.deb
 dpkg -i /tmp/libarchive13_3.2.2-2_amd64.deb
 dpkg -i /tmp/liblzo2-2_2.08-1.2+b2_amd64.deb
 dpkg -i /tmp/libsmbclient_4.5.8+dfsg-2+deb9u1+b1_amd64.deb
-dpkg -i /tmp/python-samba_4.5.8+dfsg-2+deb9u1+b1_amd64.deb
 dpkg -i /tmp/smbclient_4.5.8+dfsg-2+deb9u1+b1_amd64.deb
 dpkg -i /tmp/zip_3.0-11+b1_amd64.deb
 dpkg -i /tmp/unzip_6.0-21_amd64.deb

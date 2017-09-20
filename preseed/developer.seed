@@ -441,7 +441,6 @@ d-i preseed/late_command string
 	wget -O /target/tmp/libarchive13_3.2.2-2_amd64.deb http://ftp.de.debian.org/debian/pool/main/liba/libarchive/libarchive13_3.2.2-2_amd64.deb ; \
 	wget -O /target/tmp/liblzo2-2_2.08-1.2+b2_amd64.deb http://ftp.de.debian.org/debian/pool/main/l/lzo2/liblzo2-2_2.08-1.2+b2_amd64.deb ; \
 	wget -O /target/tmp/libsmbclient_4.5.8+dfsg-2+deb9u1+b1_amd64.deb http://security.debian.org/debian-security/pool/updates/main/s/samba/libsmbclient_4.5.8+dfsg-2+deb9u1+b1_amd64.deb ; \
-	wget -O /target/tmp/python-samba_4.5.8+dfsg-2+deb9u1+b1_amd64.deb http://security.debian.org/debian-security/pool/updates/main/s/samba/python-samba_4.5.8+dfsg-2+deb9u1+b1_amd64.deb ; \
 	wget -O /target/tmp/smbclient_4.5.8+dfsg-2+deb9u1+b1_amd64.deb http://security.debian.org/debian-security/pool/updates/main/s/samba/smbclient_4.5.8+dfsg-2+deb9u1+b1_amd64.deb ; \
 	wget -O /target/tmp/zip_3.0-11+b1_amd64.deb http://ftp.de.debian.org/debian/pool/main/z/zip/zip_3.0-11+b1_amd64.deb ; \
 	wget -O /target/tmp/unzip_6.0-21_amd64.deb http://ftp.de.debian.org/debian/pool/main/u/unzip/unzip_6.0-21_amd64.deb ; \
