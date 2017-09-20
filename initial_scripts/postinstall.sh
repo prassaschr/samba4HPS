@@ -129,6 +129,6 @@ echo "PermitRootLogin yes" | tee -a /etc/ssh/sshd_config
 # http://ftp.de.debian.org/debian/pool/main/a/apt-show-versions/apt-show-versions_0.22.7_all.deb
 # http://ftp.de.debian.org/debian/pool/main/p/python-defaults/python_2.7.13-2_amd64.deb
 # http://prdownloads.sourceforge.net/webadmin/webmin_1.850_all.deb
-#
+# http://ftp.de.debian.org/debian/pool/main/d/dialog/dialog_1.3-20160828-2_amd64.deb
 #
 # get packages from https://packages.debian.org/search?searchon=names&keywords=libopts25
