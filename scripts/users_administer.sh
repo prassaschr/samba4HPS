@@ -1,5 +1,13 @@
 #!/bin/bash
+<<<<<<< HEAD
 
+=======
+###############################################################
+# Based on a script of  USMAN AKRAM (ajaonchat)               #
+#                                                             #
+#                                                             #
+###############################################################
+>>>>>>> e620baf8a44fcd3a65abd3d5ab29b37c6ed12f1d
 add_users()
 {
 	ROOT_UID=0      #The root user has a UID of 0
