@@ -1,10 +1,5 @@
 #!/bin/bash
-###############################################################
-#This Script is Created by                                    #
-#                USMAN AKRAM  (ajaonchat)                     #
-#                                       FA05-BTN-005          #
-#                            BTN-6                            #
-###############################################################
+
 add_users()
 {
 	ROOT_UID=0      #The root user has a UID of 0
