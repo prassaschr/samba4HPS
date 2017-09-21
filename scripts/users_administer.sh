@@ -1,6 +1,6 @@
 #!/bin/bash
 ###############################################################
-#This Script is Created by USMAN AKRAM (ajaonchat)            #
+# Based on a script of  USMAN AKRAM (ajaonchat)               #
 #                                                             #
 #                                                             #
 ###############################################################
