@@ -1,3 +1,6 @@
+#Unlike Samba version 3.x and earlier, Samba version 4.x does not require a local Unix/Linux user for each Samba user that is created. The command is as follows for adding users into Samba 
+samba-tool user add USERNAME-HERE
+
 
 #orizei ta secondary groups ston user username. Etsi dinoume prosbasi se kathe share
 usermod -a -G group1,group2 username
