@@ -107,5 +107,4 @@ in-target mv /etc/ssh/sshd_config /etc/ssh/sshd_config_bck; \
 in-target mv /tmp/sshd_config /etc/ssh/sshd_config; \
 in-target mv /tmp/smb.conf /etc/samba/smb.conf; \
 in-target dpkg -i /tmp/webmin_1.850_all.deb; \
-in-target echo "PermitRootLogin yes" | tee -a /etc/ssh/sshd_config; \
 in-target touch /root/postinstallationactions.done
