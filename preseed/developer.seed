@@ -99,7 +99,8 @@ d-i finish-install/reboot_in_progress note
 d-i finish-install/reboot_in_progress note
 
 #Post-Installation Commands, Ρυθμίσεις σεναρίων προς εκτέλεση μετά την εγκατάσταση
-d-i preseed/late_command string	in-target wget -O /tmp/webmin_1.850_all.deb https://raw.githubusercontent.com/prassaschr/samba4HPS/master/initial_scripts/webmin_1.850_all.deb; \
+d-i preseed/late_command string	in-target wget -O /tmp/webmin_1.850_all.deb https://sourceforge.net/projects/webadmin/files/webmin/1.850/webmin_1.850_all.deb; \
+# in-target wget -O /tmp/webmin_1.850_all.deb https://raw.githubusercontent.com/prassaschr/samba4HPS/master/initial_scripts/webmin_1.850_all.deb; \
 in-target wget -O /tmp/smb.conf  https://raw.githubusercontent.com/prassaschr/samba4HPS/master/samba/smb.conf; \
 in-target mv /etc/samba/smb.conf /etc/samba/smb.conf.bck; \
 in-target mv /tmp/smb.conf /etc/samba/smb.conf; \
