@@ -1,9 +1,8 @@
 #!/bin/bash
 ###############################################################
-#This Script is Created by                                    #
-#                USMAN AKRAM  (ajaonchat)                     #
-#                                       FA05-BTN-005          #
-#                            BTN-6                            #
+#This Script is Created by USMAN AKRAM (ajaonchat)            #
+#                                                             #
+#                                                             #
 ###############################################################
 add_users()
 {
