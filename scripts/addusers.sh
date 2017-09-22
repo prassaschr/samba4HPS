@@ -49,8 +49,8 @@ else
 	#usermod -G groupPublic,groupSecret username
     # useradd -M -s -c /sbin/nologin ${fullnames[$x]} -g "${groups[$x]}" $user 2> /dev/null
 	useradd -M -s -c /sbin/nologin $user 2> /dev/null
-	usermod -g "${groups[$x]}" $user 2> /dev/null
-	usermod -G "${secgroups[$x]}" $user 2> /dev/null
+	###usermod -g "${groups[$x]}" $user 2> /dev/null
+	###usermod -G "${secgroups[$x]}" $user 2> /dev/null
 	#useradd -n -c ${fullnames[$x]} -g "${groups[$x]}" $user 2> /dev/null
     if [ $? -eq 0 ]
     then
