@@ -49,8 +49,14 @@ d-i mirror/http/proxy string
 d-i mirror/suite string stretch
 
 ### Account setup
+# Skip creation of a root account (normal user account will be able to
+# use sudo).
+d-i passwd/root-login boolean false
 # Alternatively, to skip creation of a normal user account.
-d-i passwd/make-user boolean false
+#d-i passwd/make-user boolean false
+# To create a normal user account.
+d-i passwd/user-fullname string Samba Server Administrator
+d-i passwd/username string smbadmin
 
 ### Clock and time zone setup
 # Controls whether or not the hardware clock is set to UTC.
@@ -71,15 +77,28 @@ d-i clock-setup/ntp-server string ntp.ntua.gr
 ### Apt setup
 # Uncomment this if you don't want to use a network mirror.
 d-i apt-setup/use_mirror boolean true
+d-i apt-setup/non-free boolean true
+d-i apt-setup/contrib boolean true
+d-i apt-setup/backports boolean true
+d-i apt-setup/multiverse boolean true
+d-i apt-setup/proposed  boolean true
+d-i apt-setup/universe  boolean true
+# Uncomment this if you don't want to use a network mirror.
+#d-i apt-setup/use_mirror boolean false
+# Select which update services to use; define the mirrors to be used.
+# Values shown below are the normal defaults.
+d-i apt-setup/services-select multiselect security, updates
+d-i apt-setup/security_host string security.debian.org
+d-i apt-setup/security-updates boolean true
 
 ### Package selection
 #tasksel tasksel/first multiselect standard, web-server, kde-desktop
-tasksel tasksel/first multiselect standard
+tasksel tasksel/first multiselect standard, gnome-desktop
 d-i pkgsel/install-language-support boolean true
 d-i pkgsel/language-pack-patterns string el_GR
 
 # Individual additional packages to install
-d-i pkgsel/include string rsync ssh openssh-server libwrap0 openssh-sftp-server libapt-pkg-perl tcpd ethtool libdumbnet1 curl libglib2.0-0 libglib2.0-data libcurl3 libmspack0 libopts25 libxerces-c3.1 libxml-security-c17v5 perl-openssl-defaults shared-mime-info xdg-user-dirs zerofree ntp fail2ban python3-pyinotify python3-systemd whois attr libaio1 libavahi-client3 libavahi-common-data libavahi-common3 libcups2 libfile-copy-recursive-perl libgpgme11 libldb1 libpython2.7 libtalloc2 libtdb1 libtevent0 libwbclient0 python-crypto python-dnspython python-ldb python-samba python-talloc python-tdb samba samba-common samba-common-bin samba-dsdb-modules samba-libs samba-vfs-modules tdb-tools update-inetd libarchive13 liblzo2-2 libsmbclient smbclient zip unzip cifs-utils fuse libntfs-3g871 ntfs-3g apt-transport-https perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python dialog cups open-vm-tools 
+d-i pkgsel/include string rsync ssh openssh-server libwrap0 openssh-sftp-server libapt-pkg-perl tcpd ethtool libdumbnet1 curl libglib2.0-0 libglib2.0-data libcurl3 libmspack0 libopts25 libxerces-c3.1 libxml-security-c17v5 perl-openssl-defaults shared-mime-info xdg-user-dirs zerofree ntp fail2ban python3-pyinotify python3-systemd whois attr libaio1 libavahi-client3 libavahi-common-data libavahi-common3 libcups2 libfile-copy-recursive-perl libgpgme11 libldb1 libpython2.7 libtalloc2 libtdb1 libtevent0 libwbclient0 python-crypto python-dnspython python-ldb python-samba python-talloc python-tdb samba samba-common samba-common-bin samba-dsdb-modules samba-libs samba-vfs-modules tdb-tools update-inetd libarchive13 liblzo2-2 libsmbclient smbclient zip unzip cifs-utils fuse libntfs-3g871 ntfs-3g apt-transport-https perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python dialog cups open-vm-tools unrar clamav clamav-base clamav-daemon clamav-freshclam clamdscan libclamav7 libjson-c3 libllvm3.8 libtfm1
 # exim4-base exim4-config exim4-daemon-light guile-2.0-libs libfribidi0 libgc1c2 libgsasl7 libkyotocabinet16v5 libmailutils5 libmariadbclient18 libntlm0 mailutils mailutils-common mysql-common psmisc
 d-i pkgsel/upgrade select safe-upgrade
 

@@ -2,14 +2,17 @@
 #
 #
 ####### Download massive user import scripts ###
-wget -O /home/addusers.sh https://raw.githubusercontent.com/prassaschr/samba4HPS/master/scripts/addusers.sh
-wget -O /home/addusers.csv https://raw.githubusercontent.com/prassaschr/samba4HPS/master/scripts/addusers.csv
+wget -O /home/smbadmin/addusers.sh https://raw.githubusercontent.com/prassaschr/samba4HPS/master/scripts/addusers.sh
+wget -O /home/smbadmin/addusers.csv https://raw.githubusercontent.com/prassaschr/samba4HPS/master/scripts/addusers.csv
+chmod +x /home/smbadmin/addusers.sh
+chown smbadmin:smbadmin /home/smbadmin/addusers.sh
+chown smbadmin:smbadmin /home/smbadmin/addusers.csv
 ################################################
 #
 #
 ####### Download backup script #################
-wget -O /home/backup_script.sh https://raw.githubusercontent.com/prassaschr/samba4HPS/master/scripts/backup_script.sh
-chmod +x /home/addusers.sh
+wget -O /home/smbadmin/backup_script.sh https://raw.githubusercontent.com/prassaschr/samba4HPS/master/scripts/backup_script.sh
+chown smbadmin:smbadmin /home/smbadmin/backup_script.sh
 ###############################################
 #
 #
