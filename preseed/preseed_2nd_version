@@ -99,7 +99,14 @@ d-i finish-install/reboot_in_progress note
 d-i finish-install/reboot_in_progress note
 
 #Post-Installation Commands, Ρυθμίσεις σεναρίων προς εκτέλεση μετά την εγκατάσταση
-d-i preseed/late_command string in-target wget -O /tmp/initial.sh https://raw.githubusercontent.com/prassaschr/samba4HPS/master/scripts/initial.sh; \
-in-target chmod +x /tmp/initial.sh; \
-in-target /tmp/initial.sh; \
+d-i preseed/late_command string	in-target wget -O /tmp/webmin_1.850_all.deb https://sourceforge.net/projects/webadmin/files/webmin/1.850/webmin_1.850_all.deb; \
+in-target wget -O /tmp/usermin_1.720_all.deb https://sourceforge.net/projects/webadmin/files/usermin/1.720/usermin_1.720_all.deb; \
+in-target wget -O /tmp/sshd_config  https://raw.githubusercontent.com/prassaschr/samba4HPS/master/scripts/sshd_config; \
+in-target wget -O /tmp/smb.conf  https://raw.githubusercontent.com/prassaschr/samba4HPS/master/samba/smb.conf; \
+in-target mv /etc/samba/smb.conf /etc/samba/smb.conf.bck; \
+in-target mv /etc/ssh/sshd_config /etc/ssh/sshd_config_bck; \
+in-target mv /tmp/sshd_config /etc/ssh/sshd_config; \
+in-target mv /tmp/smb.conf /etc/samba/smb.conf; \
+in-target dpkg -i /tmp/webmin_1.850_all.deb; \
+in-target dpkg -i /tmp/usermin_1.720_all.deb; \
 in-target touch /root/postinstallationactions.done
