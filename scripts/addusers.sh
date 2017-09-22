@@ -5,7 +5,7 @@
 #Name:EmployeeID:Department:SecondaryGroups
 # 
 #=====================================================
-filein="users_data.csv"
+filein="addusers.csv"
 IFS=$'\n'
 
 if [ ! -f "$filein" ]
