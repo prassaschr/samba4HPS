@@ -51,7 +51,20 @@ mv /tmp/a.conf /etc/samba/smb.d/a.conf
 mv /tmp/b.conf /etc/samba/smb.d/b.conf
 mv /tmp/c.conf /etc/samba/smb.d/c.conf
 ls /etc/smb/smb.d/* | sed -e 's/^/include = /' > /etc/smb/includes.conf #dimiourgei to includes.conf pou periexei ola ta config files
+#Dimiourgia ton shares, sto paradeigma exoume to share public kai to share secret
+mkdir -p /home/public/
+mkdir -p /home/secret/
+#Dimiourgia ton groups
+groupadd groupPublic
+groupadd groupSecret
+#Orismos ton groups sta shares
+chgrp -R groupPublic /home/public/
+chgrp -R groupSecret /home/secret/
+#Orismos dikaiomaton sta shares
+chmod 2770 /home/public/
+chmod 2770 /home/secret/
 service smbd restart #samba restart
 ###########################################
 #
 #
+
