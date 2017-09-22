@@ -11,10 +11,11 @@
 **Τι περιέχεται στο εκκινήσιμο ISO; Δείτε παρακάτω...** (βασισμένο στην έκδοση <A href="https://www.debian.org/distrib/netinst"> Debian Linux 9.0.1 Netinstall 64bit </A>)
   1. <A href="https://www.samba.org/"> Samba </A> (με Κάδο Ανακύκλωσης ανά περιοχή διαμοιρασμού και καταγραφή των λειτουργιών)
   2. <A href="http://www.webmin.com/"> Webmin </A> (διαχειριστικό του server, αρκετά απλό ακόμη και για άπειρους χρήστες Linux)
-  3. <A href="https://www.fail2ban.org/wiki/index.php/Main_Page"> Fail2ban </A> (προσπαθώντας να προστατεύσουμε τα δεδομένα από ransomware)
-  4. <A href="https://rsync.samba.org/"> Rsync </A> (μικρά, κατανοητά bash scripts που κάνουν χρήση rsync για να δημιουργείτε τα backups εύκολα)
-  5. <A href="https://danrohde.github.io/webdavcgi/index.html"> WebDAV CGI </A> (Χμμ, Ίσως κάποια στιγμή αργότερα... σε επόμενη έκδοση!)
-  6. Κάτι άλλο θα σκεφτούμε ή κάτι που θα προτείνετε...
+  3. <A href="http://www.webmin.com/usermin.html"> Usermin </A> (διαχειριστικό, αρκετά απλό ακόμη και για άπειρους χρήστες Linux)
+  4. <A href="https://www.fail2ban.org/wiki/index.php/Main_Page"> Fail2ban </A> (προσπαθώντας να προστατεύσουμε τα δεδομένα από ransomware)
+  5. <A href="https://rsync.samba.org/"> Rsync </A> (μικρά, κατανοητά bash scripts που κάνουν χρήση rsync για να δημιουργείτε τα backups εύκολα)
+  6. <A href="https://danrohde.github.io/webdavcgi/index.html"> WebDAV CGI </A> (Χμμ, Ίσως κάποια στιγμή αργότερα... σε επόμενη έκδοση!)
+  7. Κάτι άλλο θα σκεφτούμε ή κάτι που θα προτείνετε...
 </p>
 
 **_Διανομές - Σύντομα διαθέσιμες..._**
@@ -32,6 +33,7 @@ A custom <A href="https://www.debian.org/index.el.html"> Debian Linux </A> iso, 
 **What's in the bootable iso? Check below...** (based on <A href="https://www.debian.org/distrib/netinsto"> Debian Linux 9.0.1 Netinstall 64bit </A>)
   1. <A href="https://www.samba.org/"> Samba </A> (with Recycle Bin per share and Full Audit - log a lot)
   2. <A href="http://www.webmin.com/"> Webmin </A> (administrate the server easier, best for linux beginners)
+  3. <A href="http://www.webmin.com/usermin.html"> Usermin </A> (user administration tool)
   3. <A href="https://www.fail2ban.org/wiki/index.php/Main_Page"> Fail2ban </A> (trying to protect data from ransomware malicious software)
   4. <A href="https://rsync.samba.org/"> Rsync </A> (bash scripts with rsync so you can create backups easily)
   5. <A href="https://danrohde.github.io/webdavcgi/index.html"> WebDAV CGI </A> (Hmm, so everything might be on the web... Maybe in a later release!)
