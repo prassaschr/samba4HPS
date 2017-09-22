@@ -34,10 +34,10 @@ A custom <A href="https://www.debian.org/index.el.html"> Debian Linux </A> iso, 
   1. <A href="https://www.samba.org/"> Samba </A> (with Recycle Bin per share and Full Audit - log a lot)
   2. <A href="http://www.webmin.com/"> Webmin </A> (administrate the server easier, best for linux beginners)
   3. <A href="http://www.webmin.com/usermin.html"> Usermin </A> (user administration tool)
-  3. <A href="https://www.fail2ban.org/wiki/index.php/Main_Page"> Fail2ban </A> (trying to protect data from ransomware malicious software)
-  4. <A href="https://rsync.samba.org/"> Rsync </A> (bash scripts with rsync so you can create backups easily)
-  5. <A href="https://danrohde.github.io/webdavcgi/index.html"> WebDAV CGI </A> (Hmm, so everything might be on the web... Maybe in a later release!)
-  6. Many more will come or many more you might suggest...
+  4. <A href="https://www.fail2ban.org/wiki/index.php/Main_Page"> Fail2ban </A> (trying to protect data from ransomware malicious software)
+  5. <A href="https://rsync.samba.org/"> Rsync </A> (bash scripts with rsync so you can create backups easily)
+  6. <A href="https://danrohde.github.io/webdavcgi/index.html"> WebDAV CGI </A> (Hmm, so everything might be on the web... Maybe in a later release!)
+  7. Many more will come or many more you might suggest...
 </p>
 
 ### **_Dont't forget! Make backup daily!_**
