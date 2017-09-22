@@ -13,3 +13,5 @@ chgrp -R groupSecret /home/secret/
 #Orismos dikaiomaton sta shares
 chmod 2770 /home/public/
 chmod 2770 /home/secret/
+
+#Sti sinexeia dimiourgoume tous users kai orizoume ta deuterevonta groups

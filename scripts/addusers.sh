@@ -1,9 +1,11 @@
 #!/bin/bash
 #=====================================================
 #Christos Prassas v0.1
-# File with: 
+#Gets a file with name "addusers.csv and imports users
 #Name:Username:Password:SecondaryGroups
 #The addusers.csv must use column as separator
+#Attention! First create samba shares and groups and 
+#then create the users....
 #=====================================================
 filein="addusers.csv"
 IFS=$'\n'
@@ -27,7 +29,7 @@ else
   for group in ${groups[*]}
   do
     grep -q "^$group" /etc/group ; let x=$?
-    if [ $x -eq 1 ]
+    if [ $x 1-eq 1 ]
     then
       groupadd "$group"
     fi
