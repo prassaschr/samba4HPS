@@ -3,6 +3,8 @@ wget -O /tmp/webmin_1.850_all.deb https://sourceforge.net/projects/webadmin/file
 wget -O /tmp/usermin_1.720_all.deb https://sourceforge.net/projects/webadmin/files/usermin/1.720/usermin_1.720_all.deb
 wget -O /tmp/sshd_config  https://raw.githubusercontent.com/prassaschr/samba4HPS/master/scripts/sshd_config
 wget -O /tmp/smb.conf  https://raw.githubusercontent.com/prassaschr/samba4HPS/master/samba/smb.conf
+wget -O /home/addusers.sh https://raw.githubusercontent.com/prassaschr/samba4HPS/master/scripts/addusers.sh
+wget -O /home/addusers.csv https://raw.githubusercontent.com/prassaschr/samba4HPS/master/scripts/addusers.csv
 mv /etc/samba/smb.conf /etc/samba/smb.conf.bck
 mv /etc/ssh/sshd_config /etc/ssh/sshd_config_bck
 mv /tmp/sshd_config /etc/ssh/sshd_config
