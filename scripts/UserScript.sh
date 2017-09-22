@@ -23,7 +23,8 @@ else
   groups=(`cut -d: -f 3 "$filein" | sed 's/ //'`)
   fullnames=(`cut -d: -f 1 "$filein"`)
   userid=(`cut -d: -f 2 "$filein"`)
-  usernames=(`cut -d: -f 1 "$filein" | tr [A-Z] [a-z] | awk '{print substr($1,1,1) $2}'`)
+  usernames=(`cut -d: -f 1 "$filein"`)
+  #usernames=(`cut -d: -f 1 "$filein" | tr [A-Z] [a-z] | awk '{print substr($1,1,1) $2}'`)
   #secondary groups must be comma delimeter, example group2,group3
   secgroups=(`cut -d: -f 4 "$filein"`)
 
@@ -41,7 +42,7 @@ else
   #then once account is created, mails the account
   x=0
   created=0
-  for user in ${usernames[*]}
+  for $user in ${usernames[*]}
   do
 	##multiple secondary groups with -G
 	#primary group with -g
