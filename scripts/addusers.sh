@@ -42,13 +42,14 @@ else
   #then once account is created, mails the account
   x=0
   created=0
-  for $user in ${usernames[*]}
+  for user in ${usernames[*]}
   do
 	##multiple secondary groups with -G
 	#primary group with -g
 	#usermod -G groupPublic,groupSecret username
-    useradd -M -s -c /sbin/nologin ${fullnames[$x]} -g "${groups[$x]}" $user 2> /dev/null
-	usermod -G "${groups[$x]}" $user 2> /dev/null
+    # useradd -M -s -c /sbin/nologin ${fullnames[$x]} -g "${groups[$x]}" $user 2> /dev/null
+	useradd -M -s -c /sbin/nologin -g "${groups[$x]}" $user 2> /dev/null
+	usermod -G "${secgroups[$x]}" $user 2> /dev/null
 	#useradd -n -c ${fullnames[$x]} -g "${groups[$x]}" $user 2> /dev/null
     if [ $? -eq 0 ]
     then
@@ -57,7 +58,7 @@ else
 	#echo "Name: ${fullnames[$x]}, un: $user, pw: ${userid[$x]}"
     #This creates the password for the user suppresses output of passwd
     #The -p in the useradd function doesn't set it properly
-    echo "${userid[$x]}" | passwd --stdin "$user" > /dev/null
+    echo "${userid[$x]}" | passwd "$user" > /dev/null
 	echo "${userid[$x]}" | smbpasswd -a -s "$user" > /dev/null
 	smbpasswd -e $user > /dev/null
     #sends mail to user
