@@ -5,6 +5,8 @@ wget -O /tmp/sshd_config  https://raw.githubusercontent.com/prassaschr/samba4HPS
 wget -O /tmp/smb.conf  https://raw.githubusercontent.com/prassaschr/samba4HPS/master/samba/smb.conf
 wget -O /home/addusers.sh https://raw.githubusercontent.com/prassaschr/samba4HPS/master/scripts/addusers.sh
 wget -O /home/addusers.csv https://raw.githubusercontent.com/prassaschr/samba4HPS/master/scripts/addusers.csv
+wget -O /home/backup_script.sh https://raw.githubusercontent.com/prassaschr/samba4HPS/master/scripts/backup_script.sh
+chmod +x /home/addusers.sh
 mv /etc/samba/smb.conf /etc/samba/smb.conf.bck
 mv /etc/ssh/sshd_config /etc/ssh/sshd_config_bck
 mv /tmp/sshd_config /etc/ssh/sshd_config
