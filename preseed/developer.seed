@@ -93,7 +93,7 @@ d-i apt-setup/security-updates boolean true
 
 ### Package selection
 #tasksel tasksel/first multiselect standard, web-server, kde-desktop
-tasksel tasksel/first multiselect standard, gnome-desktop
+tasksel tasksel/first multiselect standard, lxde-desktop
 d-i pkgsel/install-language-support boolean true
 d-i pkgsel/language-pack-patterns string el_GR
 
