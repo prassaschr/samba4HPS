@@ -3,7 +3,7 @@
 #Christos Prassas v0.1
 # File with: 
 #Name:EmployeeID:Department:SecondaryGroups
-# 
+#The addusers.csv must use column as separator
 #=====================================================
 filein="addusers.csv"
 IFS=$'\n'
@@ -55,12 +55,12 @@ else
 	echo -ne "${userid[$x]}\n${userid[$x]}\n" | smbpasswd -a -s "$user" > /dev/null
 	smbpasswd -e $user > /dev/null
     #sends mail to user
-    #echo "Welcome! Your account has been created.  Your username is $user and temporary password is \"$password\" without the quotes." | mail -s "New Account for $user" root
+    #echo "Your account has been created.  Username is $user and password is \"$password\" without the quotes." | mail -s "New Account for $user" root
     #x=$x+1
     #echo -n "..."
     #sleep .25
   done
   sleep .25
   echo " "
-  echo "Complete. $created accounts have been created."
+  echo "Finish. $created accounts inserted to your server."
 fi
