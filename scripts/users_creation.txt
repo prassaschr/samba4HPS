@@ -9,10 +9,12 @@ usermod -a -G group1,group2 username
 #primary group with -g 
 #Mikro g kai megalo G kanoun tin diafora
   
-   useradd -M -s /sbin/nologin username
-   passwd username #dineis password
-   smbpasswd -a username # dineis password, to idio me to parapano
-   smbpasswd -e username #kanei enable ton user username
+  # -s Change User Login Shell
+  # -M without home directory
+   useradd -M -s /sbin/nologin test1
+   passwd test1
+   smbpasswd -a username
+   smbpasswd -e username
    usermod -G groupPublic,groupSecret username 
 
 
