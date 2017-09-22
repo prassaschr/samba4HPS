@@ -59,8 +59,8 @@ else
 	#echo "Name: ${fullnames[$x]}, un: $user, pw: ${userid[$x]}"
     #This creates the password for the user suppresses output of passwd
     #The -p in the useradd function doesn't set it properly
-    (echo "${userid[$x]}"; echo "${userid[$x]}") | passwd -q "$user" > /dev/null
-	(echo "${userid[$x]}"; echo "${userid[$x]}") | smbpasswd -a -s "$user" > /dev/null
+    echo "${userid[$x]}" | passwd -q "$user" > /dev/null
+	echo "${userid[$x]}" | smbpasswd -a -s "$user" > /dev/null
 	smbpasswd -e $user > /dev/null
     #sends mail to user
     echo "Welcome! Your account has been created.  Your username is $user and temporary password is \"$password\" without the quotes." | mail -s "New Account for $user" -b root $user
