@@ -17,9 +17,9 @@ chown smbadmin:smbadmin /home/smbadmin/backup_script.sh
 #
 #
 ####### Enable SSH root login ##################
-wget -O /tmp/sshd_config  https://raw.githubusercontent.com/prassaschr/samba4HPS/master/scripts/sshd_config
-mv /etc/ssh/sshd_config /etc/ssh/sshd_config_bck
-mv /tmp/sshd_config /etc/ssh/sshd_config
+#wget -O /tmp/sshd_config  https://raw.githubusercontent.com/prassaschr/samba4HPS/master/scripts/sshd_config
+#mv /etc/ssh/sshd_config /etc/ssh/sshd_config_bck
+#mv /tmp/sshd_config /etc/ssh/sshd_config
 ################################################
 #
 #
