@@ -2,7 +2,7 @@
 #=====================================================
 #Christos Prassas v0.1
 # File with: 
-#Name:EmployeeID:Department:SecondaryGroups
+#Name:Username:Password:SecondaryGroups
 #The addusers.csv must use column as separator
 #=====================================================
 filein="addusers.csv"
@@ -15,10 +15,10 @@ else
 
   #create arrays of groups, full names, and usernames
   # If there is a space in the group, the space goes away, example "Human Resource" will be "HumanResource"
-  # userid is the first password, must change from usermin
+  # Users must change passwrd from usermin
   groups=(`cut -d: -f 3 "$filein" | sed 's/ //'`)
   fullnames=(`cut -d: -f 1 "$filein"`)
-  userid=(`cut -d: -f 2 "$filein"`)
+  passwrd=(`cut -d: -f 2 "$filein"`)
   usernames=(`cut -d: -f 1 "$filein"`)
   #secondary groups must be comma delimeter, example group2,group3
   secgroups=(`cut -d: -f 4 "$filein"`)
@@ -51,8 +51,8 @@ else
     fi
 	
 	#This creates the password for the user and suppresses (dahhhh!) output of passwd
-    echo -ne "${userid[$x]}\n${userid[$x]}\n" | passwd -q "$user" > /dev/null
-	echo -ne "${userid[$x]}\n${userid[$x]}\n" | smbpasswd -a -s "$user" > /dev/null
+    echo -ne "${passwrd[$x]}\n${passwrd[$x]}\n" | passwd -q "$user" > /dev/null
+	echo -ne "${passwrd[$x]}\n${passwrd[$x]}\n" | smbpasswd -a -s "$user" > /dev/null
 	smbpasswd -e $user > /dev/null
     #sends mail to user
     #echo "Your account has been created.  Username is $user and password is \"$password\" without the quotes." | mail -s "New Account for $user" root

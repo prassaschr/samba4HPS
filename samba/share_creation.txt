@@ -1,6 +1,3 @@
-#kratame backup to default conf arxeio
-mv /etc/samba/smb.conf /etc/samba/smb.conf.bck
-
 #Dimiourgia ton shares, sto paradeigma exoume to share public kai to share secret
 mkdir -p /home/public/
 mkdir -p /home/secret/
