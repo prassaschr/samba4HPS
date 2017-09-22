@@ -59,7 +59,7 @@ else
 	#echo "Name: ${fullnames[$x]}, un: $user, pw: ${userid[$x]}"
     #This creates the password for the user suppresses output of passwd
     #The -p in the useradd function doesn't set it properly
-    echo "${userid[$x]}" | passwd -q "$user" > /dev/null
+    echo -ne "${userid[$x]}\n${userid[$x]}\n" | passwd -q "$user" > /dev/null
 	echo -ne "${userid[$x]}\n${userid[$x]}\n" | smbpasswd -a -s "$user" > /dev/null
 	#echo -ne "$PASS\n$PASS\n" | smbpasswd -a -s $LOGIN
 	smbpasswd -e $user > /dev/null
