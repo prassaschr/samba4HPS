@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name=Ping Localhost
+Name=Import Users
 Type=Application
-Comment=Backup files
+Comment=Import Users
 Exec=/home/smbadmin/CreateUsers/addusers.sh
 Terminal=true
 StartupNotify=false
