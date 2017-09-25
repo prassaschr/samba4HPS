@@ -22,6 +22,7 @@
 * Διανομή **ΜΕ** γραφικό περιβάλλον εργασίας χρήστη (GUI) 64bit 
 * Διανομή **ΧΩΡΙΣ** γραφικό περιβάλλον εργασίας χρήστη (GUI) <A href="https://github.com/prassaschr/samba4HPS/releases"> 64bit </A>
 
+Οι διανομές περιλαμβάνουν δύο (2) κοινόχρηστους πόρους. Ο ένας ονομάζεται public και είναι ο άλλος secret. Παράλληλα, υπάρχει script μέσω του οποίου μπορείτε εύκολα να δημιουργήσετε χρήστες μαζικά.
 
 # Samba4HPS 
 ### Samba File Server for Hellenic Public Sector 
@@ -45,5 +46,7 @@ A custom <A href="https://www.debian.org/index.el.html"> Debian Linux </A> iso, 
 **_Distributions - Available soon..._**
 * Distribution **WITH** graphical user interface (GUI) 64bit 
 * Distribution **WITHOUT** graphical user interface (GUI) <A href="https://github.com/prassaschr/samba4HPS/releases"> 64bit </A>
+
+In the file server distributions there are two (2) shared volumes. The one with name public and the other with name secret. In the distro you can find also a script to help you create multiple user's account easily.
 
 [![Samba4HPS Installation](https://img.youtube.com/vi/SsPxNh28xWU/0.jpg)](https://www.youtube.com/watch?v=SsPxNh28xWU "Samba4HPS Installation")
