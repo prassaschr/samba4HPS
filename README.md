@@ -15,7 +15,8 @@
   4. <A href="https://www.fail2ban.org/wiki/index.php/Main_Page"> Fail2ban </A> (προσπαθώντας να προστατεύσουμε τα δεδομένα από ransomware)
   5. <A href="https://rsync.samba.org/"> Rsync </A> (μικρά, κατανοητά bash scripts που κάνουν χρήση rsync για να δημιουργείτε τα backups εύκολα)
   6. <A href="https://danrohde.github.io/webdavcgi/index.html"> WebDAV CGI </A> (Χμμ, Ίσως κάποια στιγμή αργότερα... σε επόμενη έκδοση!)
-  7. Κάτι άλλο θα σκεφτούμε ή κάτι που θα προτείνετε...
+  7. <A href="https://www.clamav.net/"> Clamav </A> Antivirus.
+  8. Κάτι άλλο θα σκεφτούμε ή κάτι που θα προτείνετε...
 </p>
 
 **_Διανομές - Σύντομα διαθέσιμες..._**
@@ -40,7 +41,8 @@ A custom <A href="https://www.debian.org/index.el.html"> Debian Linux </A> iso, 
   4. <A href="https://www.fail2ban.org/wiki/index.php/Main_Page"> Fail2ban </A> (trying to protect data from ransomware malicious software)
   5. <A href="https://rsync.samba.org/"> Rsync </A> (bash scripts with rsync so you can create backups easily)
   6. <A href="https://danrohde.github.io/webdavcgi/index.html"> WebDAV CGI </A> (Hmm, so everything might be on the web... Maybe in a later release!)
-  7. Many more will come or many more you might suggest...
+  7. 7. <A href="https://www.clamav.net/"> Clamav </A> Antivirus.
+  8. Many more will come or many more you might suggest...
 </p>
 
 ### **_Dont't forget! Make backup daily!_**
