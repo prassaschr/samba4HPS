@@ -2,7 +2,7 @@
 Name=Ping Localhost
 Type=Application
 Comment=Backup files
-Exec=ping localhost
+Exec=addusers.sh
 Terminal=true
 StartupNotify=false
 Icon=users
