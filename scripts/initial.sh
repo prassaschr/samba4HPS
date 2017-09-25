@@ -63,7 +63,7 @@ chgrp -R groupSecret /home/secret/
 #Orismos dikaiomaton sta shares
 chmod 2770 /home/public/
 chmod 2770 /home/secret/
-service smbd restart #samba restart
+#service smbd restart #samba restart
 ###########################################
 #
 #
