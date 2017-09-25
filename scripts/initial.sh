@@ -73,15 +73,11 @@ chmod 2770 /home/secret/
 #
 #
 ####### Clamav initialization #############
-#mkdir -p /home/smbadmin/virus_quarantine #create virus quarantine
+mkdir -p /home/smbadmin/virus_quarantine #create virus quarantine
 ##### block of commands to run before scan in order to have the newest virus database signatures
-#sudo service clamav-freshclam stop
-#sudo freshclam
-#sudo service clamav-freshclam start
 ####
 ## This should be a root cronjob.
-#30 01 * * * service clamav-freshclam stop; freshclam --quiet; service clamav-freshclam start; /usr/bin/clamscan --recursive --no-summary --infected / 2>/dev/null
-
+echo -e "$(sudo crontab -u root -l)\n0 0 * * * service clamav-freshclam stop; freshclam --quiet; service clamav-freshclam start; clamscan --recursive=yes --no-summary --infected --move=/home/smbadmin/virus_quarantine 2>/dev/null" | sudo crontab -u root -
 #clamscan -r --move=/home/smbadmin/virus_quarantine /home/smbadmin # cron command to scan
 
 
