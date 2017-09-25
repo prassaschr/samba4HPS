@@ -2,7 +2,7 @@
 Name=Ping Localhost
 Type=Application
 Comment=Backup files
-Exec=/home/smbadmin/addusers.sh
+Exec=/home/smbadmin/CreateUsers/addusers.sh
 Terminal=true
 StartupNotify=false
 Icon=users
