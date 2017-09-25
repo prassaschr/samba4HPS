@@ -22,7 +22,7 @@
 * Διανομή **ΜΕ** γραφικό περιβάλλον εργασίας χρήστη (GUI) 64bit 
 * Διανομή **ΧΩΡΙΣ** γραφικό περιβάλλον εργασίας χρήστη (GUI) <A href="https://github.com/prassaschr/samba4HPS/releases"> 64bit </A>
 
-Στο <A https://github.com/prassaschr/samba4HPS/wiki"> Wiki </A> μπορείτε να δείτε χρήσιμες οδηγίες...
+Στο <A href="https://github.com/prassaschr/samba4HPS/wiki"> Wiki </A> μπορείτε να δείτε χρήσιμες οδηγίες...
 
 Οι διανομές περιλαμβάνουν δύο (2) κοινόχρηστους πόρους. Ο ένας ονομάζεται public και ο άλλος secret. Παράλληλα, υπάρχει script μέσω του οποίου μπορείτε εύκολα να δημιουργήσετε χρήστες μαζικά με χρήση ενός αρχείου CSV.
 
@@ -49,7 +49,7 @@ A custom <A href="https://www.debian.org/index.el.html"> Debian Linux </A> iso, 
 * Distribution **WITH** graphical user interface (GUI) 64bit 
 * Distribution **WITHOUT** graphical user interface (GUI) <A href="https://github.com/prassaschr/samba4HPS/releases"> 64bit </A>
 
-In the <A https://github.com/prassaschr/samba4HPS/wiki"> Wiki </A> you can find usefull infos about...
+In the <A href="https://github.com/prassaschr/samba4HPS/wiki"> Wiki </A> you can find usefull infos about...
 
 In the file server distributions there are two (2) shared volumes. The one with name public and the other with name secret. In the distro you can find also a script to help you create multiple user's account easily.
 
