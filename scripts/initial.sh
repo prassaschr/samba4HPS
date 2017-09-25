@@ -46,7 +46,7 @@ dpkg -i /tmp/usermin_1.720_all.deb
 #
 ####### Samba server initialization ###########
 wget -O /tmp/smb.conf  https://raw.githubusercontent.com/prassaschr/samba4HPS/master/samba/smb.conf #periexei mono to include = /etc/samba/includes.conf
-mv /etc/samba/smb.conf /etc/samba/smb.conf.bak #kanei bakup to arxiko smb.conf
+mv /etc/samba/smb.conf /etc/samba/smb.conf.bak #kanei backup to arxiko smb.conf
 mv /tmp/smb.conf /etc/samba/smb.conf
 mkdir /etc/samba/smb.d # dimiourgei ton fakelo smb.d
 wget -O /tmp/a.conf https://raw.githubusercontent.com/prassaschr/samba4HPS/master/samba/a.conf #periexei ta basika - global tou samba
