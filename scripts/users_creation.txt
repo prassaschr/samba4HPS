@@ -1,4 +1,4 @@
-#Unlike Samba version 3.x and earlier, Samba version 4.x does not require a local Unix/Linux user for each Samba user that is created. The command is as follows for adding users into Samba 
+#Unlike Samba version 3.x and earlier, Samba version 4.x does not require a local Unix/Linux user for each Samba user that is created. The command is as follows for adding users into Samba. Its best to have also the user in linux system and to change the password at once from usermin
 samba-tool user add USERNAME-HERE
 
 
