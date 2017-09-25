@@ -18,5 +18,3 @@ usermod -a -G group1,group2 username
    usermod -G groupPublic,groupSecret username 
 
 
-#Script to see
-#https://www.howtoforge.com/how-to-add-linux-system-users-from-a-text-file
