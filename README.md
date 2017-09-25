@@ -19,7 +19,7 @@
 </p>
 
 **_Διανομές - Σύντομα διαθέσιμες..._**
-* Διανομή **ΜΕ** γραφικό περιβάλλον εργασίας χρήστη (GUI) 64bit 
+* Διανομή **ΜΕ** γραφικό περιβάλλον εργασίας χρήστη (GUI) <A href="https://github.com/prassaschr/samba4HPS/releases"> 64bit </A> 
 * Διανομή **ΧΩΡΙΣ** γραφικό περιβάλλον εργασίας χρήστη (GUI) <A href="https://github.com/prassaschr/samba4HPS/releases"> 64bit </A>
 
 Στο <A href="https://github.com/prassaschr/samba4HPS/wiki"> Wiki </A> μπορείτε να δείτε χρήσιμες οδηγίες...
@@ -46,7 +46,7 @@ A custom <A href="https://www.debian.org/index.el.html"> Debian Linux </A> iso, 
 ### **_Dont't forget! Make backup daily!_**
 
 **_Distributions - Available soon..._**
-* Distribution **WITH** graphical user interface (GUI) 64bit 
+* Distribution **WITH** graphical user interface (GUI) <A href="https://github.com/prassaschr/samba4HPS/releases"> 64bit </A>
 * Distribution **WITHOUT** graphical user interface (GUI) <A href="https://github.com/prassaschr/samba4HPS/releases"> 64bit </A>
 
 In the <A href="https://github.com/prassaschr/samba4HPS/wiki"> Wiki </A> you can find usefull infos about...
