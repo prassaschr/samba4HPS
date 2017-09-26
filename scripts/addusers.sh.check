@@ -1,11 +1,10 @@
 #!/bin/bash
-
 HEIGHT=15
 WIDTH=40
 CHOICE_HEIGHT=4
 BACKTITLE="Προσοχή!!! Απαιτείται έλεγχος!"
 TITLE="ΠΡΟΣΟΧΗ!"
-MENU="Έχετε ελέγξει το αρχείο χρηστών /home/smbadmin/addusers.csv???"
+MENU="Έχετε ελέγξει το αρχείο χρηστών addusers.csv???"
 
 OPTIONS=(1 "ΝΑΙ"
          2 "ΟΧΙ")
