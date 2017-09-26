@@ -78,6 +78,3 @@ mkdir -p /home/smbadmin/virus_quarantine #create virus quarantine
 ####
 ## This should be a root cronjob.
 echo -e "$(sudo crontab -u root -l)\n0 0 * * * service clamav-freshclam stop; freshclam --quiet; service clamav-freshclam start; clamscan --recursive=yes --no-summary --infected --move=/home/smbadmin/virus_quarantine 2>/dev/null" | sudo crontab -u root -
-#clamscan -r --move=/home/smbadmin/virus_quarantine /home/smbadmin # cron command to scan
-
-
