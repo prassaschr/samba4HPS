@@ -7,11 +7,14 @@ chgrp -R smbadmin:smbadmin /home/public/CreateUsers
 wget -O /home/smbadmin/CreateUsers/addusers.sh https://raw.githubusercontent.com/prassaschr/samba4HPS/master/scripts/addusers.sh
 wget -O /home/smbadmin/CreateUsers/addusers.csv https://raw.githubusercontent.com/prassaschr/samba4HPS/master/scripts/addusers.csv
 wget -O /home/smbadmin/Desktop/addUsers.desktop https://raw.githubusercontent.com/prassaschr/samba4HPS/master/scripts/addUsers.desktop
+wget -O /home/smbadmin/Desktop/lxterminal.desktop https://raw.githubusercontent.com/prassaschr/samba4HPS/master/scripts/lxterminal.desktop
 chmod +x /home/smbadmin/CreateUsers/addusers.sh
 chmod +x /home/smbadmin/Desktop/addUsers.desktop
+chmod +x /home/smbadmin/Desktop/lxterminal.desktop
 chown smbadmin:smbadmin /home/smbadmin/CreateUsers/addusers.sh
 chown smbadmin:smbadmin /home/smbadmin/CreateUsers/addusers.csv
 chown smbadmin:smbadmin /home/smbadmin/Desktop/addUsers.desktop
+chown smbadmin:smbadmin /home/smbadmin/Desktop/lxterminal.desktop
 ################################################
 #
 #
