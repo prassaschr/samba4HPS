@@ -2,19 +2,19 @@
 #
 #
 ####### Download massive user import scripts ###
-mkdir -p /home/smbadmin/CreateUsers
-chgrp -R smbadmin:smbadmin /home/public/CreateUsers
-wget -O /home/smbadmin/CreateUsers/addusers.sh https://raw.githubusercontent.com/prassaschr/samba4HPS/master/scripts/addusers.sh
-wget -O /home/smbadmin/CreateUsers/addusers.csv https://raw.githubusercontent.com/prassaschr/samba4HPS/master/scripts/addusers.csv
-wget -O /home/smbadmin/Desktop/addUsers.desktop https://raw.githubusercontent.com/prassaschr/samba4HPS/master/scripts/addUsers.desktop
-wget -O /home/smbadmin/Desktop/lxterminal.desktop https://raw.githubusercontent.com/prassaschr/samba4HPS/master/scripts/lxterminal.desktop
-chmod +x /home/smbadmin/CreateUsers/addusers.sh
-chmod +x /home/smbadmin/Desktop/addUsers.desktop
-chmod +x /home/smbadmin/Desktop/lxterminal.desktop
-chown smbadmin:smbadmin /home/smbadmin/CreateUsers/addusers.sh
-chown smbadmin:smbadmin /home/smbadmin/CreateUsers/addusers.csv
-chown smbadmin:smbadmin /home/smbadmin/Desktop/addUsers.desktop
-chown smbadmin:smbadmin /home/smbadmin/Desktop/lxterminal.desktop
+#mkdir -p /home/smbadmin/CreateUsers
+#chgrp -R smbadmin:smbadmin /home/public/CreateUsers
+#wget -O /home/smbadmin/CreateUsers/addusers.sh https://raw.githubusercontent.com/prassaschr/samba4HPS/master/scripts/addusers.sh
+#wget -O /home/smbadmin/CreateUsers/addusers.csv https://raw.githubusercontent.com/prassaschr/samba4HPS/master/scripts/addusers.csv
+#wget -O /home/smbadmin/Desktop/addUsers.desktop https://raw.githubusercontent.com/prassaschr/samba4HPS/master/scripts/addUsers.desktop
+#wget -O /home/smbadmin/Desktop/lxterminal.desktop https://raw.githubusercontent.com/prassaschr/samba4HPS/master/scripts/lxterminal.desktop
+#chmod +x /home/smbadmin/CreateUsers/addusers.sh
+#chmod +x /home/smbadmin/Desktop/addUsers.desktop
+#chmod +x /home/smbadmin/Desktop/lxterminal.desktop
+#chown smbadmin:smbadmin /home/smbadmin/CreateUsers/addusers.sh
+#chown smbadmin:smbadmin /home/smbadmin/CreateUsers/addusers.csv
+#chown smbadmin:smbadmin /home/smbadmin/Desktop/addUsers.desktop
+#chown smbadmin:smbadmin /home/smbadmin/Desktop/lxterminal.desktop
 ################################################
 #
 #
@@ -73,6 +73,28 @@ chmod 2770 /home/public/
 chmod 2770 /home/secret/
 #service smbd restart #samba restart
 ###########################################
+#
+#
+######### Dimiourgia users ################
+#multiple secondary groups with -G 
+#primary group with -g 
+#Mikro g kai megalo G kanoun tin diafora
+# -s Change User Login Shell
+# -M without home directory
+useradd -M -s /sbin/nologin user1
+#This creates the password for the user and suppresses (dahhhh!) output of passwd
+echo -ne "user1p\nuser1p\n" | passwd -q "user1" > /dev/null
+echo -ne "user1p\nuser1p\n" | smbpasswd -a -s "user1" > /dev/null
+smbpasswd -e user1 > /dev/null
+usermod -G groupPublic user1
+#
+useradd -M -s /sbin/nologin user2
+#This creates the password for the user and suppresses (dahhhh!) output of passwd
+echo -ne "user2p\nuser2p\n" | passwd -q "user2" > /dev/null
+echo -ne "user1p\nuser2p\n" | smbpasswd -a -s "user2" > /dev/null
+smbpasswd -e user2 > /dev/null
+usermod -G groupPublic,groupSecret user2
+#############################################   
 #
 #
 ####### Clamav initialization #############
