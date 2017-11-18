@@ -15,6 +15,9 @@
 #chown smbadmin:smbadmin /home/smbadmin/CreateUsers/addusers.csv
 #chown smbadmin:smbadmin /home/smbadmin/Desktop/addUsers.desktop
 #chown smbadmin:smbadmin /home/smbadmin/Desktop/lxterminal.desktop
+apt-add-repository -y ppa:teejee2008/ppa
+apt-get update
+apt-get install timeshift
 ################################################
 #
 #
