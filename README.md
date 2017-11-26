@@ -17,7 +17,8 @@
   6. <A href="https://danrohde.github.io/webdavcgi/index.html"> WebDAV CGI </A> (Χμμ, Ίσως κάποια στιγμή αργότερα... σε επόμενη έκδοση!)
   7. <A href="https://www.clamav.net/"> Clamav </A> Antivirus.
   8. <A href="http://www.teejeetech.in/p/timeshift.html"> Timeshift </A> Backup Tool.
-  9. Κάτι άλλο θα σκεφτούμε ή κάτι που θα προτείνετε...
+  9. <A href="https://telegram.org/"> Telegram Messaging </A> Instant messages from server to the administrator.
+  10. Κάτι άλλο θα σκεφτούμε ή κάτι που θα προτείνετε...
 </p>
 
 **_Διανομές - Σύντομα διαθέσιμες..._**
@@ -44,7 +45,8 @@ A custom <A href="https://www.debian.org/index.el.html"> Debian Linux </A> iso, 
   6. <A href="https://danrohde.github.io/webdavcgi/index.html"> WebDAV CGI </A> (Hmm, so everything might be on the web... Maybe in a later release!)
   7. <A href="https://www.clamav.net/"> Clamav </A> Antivirus.
   8. <A href="http://www.teejeetech.in/p/timeshift.html"> Timeshift </A> Backup Tool.
-  9. Many more will come or many more you might suggest...
+  9. <A href="https://telegram.org/"> Telegram Messaging </A> Μηνύματα ελέγχου από τον server στον διαχειριστή.
+  10. Many more will come or many more you might suggest...
 </p>
 
 ### **_Dont't forget! Make backup daily!_**
